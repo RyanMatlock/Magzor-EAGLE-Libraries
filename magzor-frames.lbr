@@ -73,6 +73,7 @@
 <layer number="213" name="213bmp" color="14" fill="10" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Magzor frame library</description>
 <packages>
 </packages>
 <symbols>
