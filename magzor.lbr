@@ -9283,6 +9283,68 @@ I2C level switch</description>
 <text x="1.6" y="1.9" size="0.8128" layer="21" font="vector">SDA</text>
 <text x="-0.9" y="1.9" size="0.8128" layer="21" font="vector">SCL</text>
 </package>
+<package name="JST-EH-1X04">
+<pad name="1" x="-3.75" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="0.8" shape="octagon"/>
+<pad name="3" x="1.25" y="0" drill="0.8" shape="octagon"/>
+<wire x1="-6.25" y1="1.6" x2="6.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-2.2" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
+<text x="-6.25" y="1.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-6.25" y="-3.75" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-5.65" y1="-2.2" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-2.2" x2="6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="1.6" x2="-6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-0.4" x2="-6.25" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-1.3" x2="-6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="6.25" y1="1.6" x2="6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-0.4" x2="6.25" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-1.3" x2="6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-0.4" x2="-5.65" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="-0.4" x2="-5.65" y2="1" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="1" x2="5.65" y2="1" width="0.127" layer="21"/>
+<wire x1="5.65" y1="1" x2="5.65" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-0.4" x2="6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-1.3" x2="-5.65" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="-1.3" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-1.3" x2="5.65" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-1.3" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
+<circle x="-6.85" y="0" radius="0.22360625" width="0.127" layer="21"/>
+<circle x="-4.95" y="0" radius="0.22360625" width="0.127" layer="22"/>
+<pad name="4" x="3.75" y="0" drill="0.8" shape="octagon"/>
+</package>
+<package name="JST-EH-1X04-PWR+I2C">
+<pad name="VCC" x="-3.75" y="0" drill="0.8" shape="square"/>
+<pad name="GND" x="-1.25" y="0" drill="0.8" shape="octagon"/>
+<pad name="SCL" x="1.25" y="0" drill="0.8" shape="octagon"/>
+<wire x1="-6.25" y1="1.6" x2="6.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-2.2" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
+<text x="-6.25" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-6.25" y="-3.75" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-5.65" y1="-2.2" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-2.2" x2="6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="1.6" x2="-6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-0.4" x2="-6.25" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-1.3" x2="-6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="6.25" y1="1.6" x2="6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-0.4" x2="6.25" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-1.3" x2="6.25" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-0.4" x2="-5.65" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="-0.4" x2="-5.65" y2="1" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="1" x2="5.65" y2="1" width="0.127" layer="21"/>
+<wire x1="5.65" y1="1" x2="5.65" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-0.4" x2="6.25" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-1.3" x2="-5.65" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-5.65" y1="-1.3" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-1.3" x2="5.65" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-1.3" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
+<circle x="-6.85" y="0" radius="0.22360625" width="0.127" layer="21"/>
+<circle x="-4.95" y="0" radius="0.22360625" width="0.127" layer="22"/>
+<pad name="SDA" x="3.75" y="0" drill="0.8" shape="octagon"/>
+<text x="-4.8" y="1.9" size="0.8128" layer="21" font="vector">VCC</text>
+<text x="-2.3" y="1.9" size="0.8128" layer="21" font="vector">GND</text>
+<text x="0.3" y="1.9" size="0.8128" layer="21" font="vector">SCL</text>
+<text x="2.7" y="1.9" size="0.8128" layer="21" font="vector">SDA</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -14284,6 +14346,36 @@ TI TXB0108</description>
 <connect gate="G$1" pin="1" pad="SDA"/>
 <connect gate="G$1" pin="2" pad="SCL"/>
 <connect gate="G$1" pin="3" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-04" prefix="J" uservalue="yes">
+<description>EH series accepts 30-22AWG wire (max. current 3A @ 22AWG)</description>
+<gates>
+<gate name="G$1" symbol="HEADER-1X04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-EH" package="JST-EH-1X04">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-EH-PWR+I2C" package="JST-EH-1X04-PWR+I2C">
+<connects>
+<connect gate="G$1" pin="1" pad="VCC"/>
+<connect gate="G$1" pin="2" pad="SDA"/>
+<connect gate="G$1" pin="3" pad="SCL"/>
+<connect gate="G$1" pin="4" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
