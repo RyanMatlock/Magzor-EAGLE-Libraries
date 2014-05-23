@@ -1,0 +1,11 @@
+# OS X cruft
+.DS_Store
+
+# Emacs cruft
+*~
+[#]*[#]
+.\#*
+
+# EAGLE cruft
+*.l#*
+*.scr
