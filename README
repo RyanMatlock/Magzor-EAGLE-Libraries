@@ -1,4 +1,4 @@
-These are various libraries that I've made for EAGLE over the years.  I'm
-excited that I can finally track changes.  I've liberally borrowed from other
-libraries over the years, but I've generally added tweaks in one way or another
-(otherwise I'd just use the other library).
+These are parts made for use in schematics/PCBs for Magzor Corporation.
+Although some borrow heavily from existing libaries, in most cases, the
+schematic representation and/or the package representation have been modified
+in some way.
