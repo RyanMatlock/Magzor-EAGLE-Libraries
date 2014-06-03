@@ -6133,8 +6133,8 @@ for medium wire</description>
 <wire x1="-2.47" y1="2.4" x2="-2.47" y2="1.7" width="0.127" layer="21"/>
 <wire x1="2.43" y1="1.7" x2="2.43" y2="2.4" width="0.127" layer="21"/>
 <circle x="-2.54" y="-0.076" radius="0.2" width="0.127" layer="22"/>
-<pad name="1" x="-1.27" y="0" drill="0.9" shape="square"/>
-<pad name="2" x="1.23" y="0" drill="0.9" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="1" shape="square"/>
+<pad name="2" x="1.23" y="0" drill="1" shape="octagon"/>
 <text x="-3.81" y="2.794" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="-5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <text x="-1.27" y="0.889" size="0.6096" layer="51" font="vector">notch</text>
@@ -6200,8 +6200,8 @@ for medium wire</description>
 <wire x1="-2.47" y1="2.4" x2="-2.47" y2="1.7" width="0.127" layer="21"/>
 <wire x1="2.43" y1="1.7" x2="2.43" y2="2.4" width="0.127" layer="21"/>
 <circle x="-2.54" y="-0.076" radius="0.2" width="0.127" layer="22"/>
-<pad name="1/V+" x="-1.27" y="0" drill="0.9" shape="square"/>
-<pad name="2/GND" x="1.23" y="0" drill="0.9" shape="octagon"/>
+<pad name="1/V+" x="-1.27" y="0" drill="1" shape="square"/>
+<pad name="2/GND" x="1.23" y="0" drill="1" shape="octagon"/>
 <text x="0.254" y="2.667" size="0.889" layer="21" font="vector">GND</text>
 <text x="-3.81" y="3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="-4.826" size="1.27" layer="27" font="vector">&gt;VALUE</text>
@@ -9285,9 +9285,9 @@ I2C level switch</description>
 <text x="-0.9" y="1.9" size="0.8128" layer="21" font="vector">SCL</text>
 </package>
 <package name="JST-EH-1X04">
-<pad name="1" x="-3.75" y="0" drill="0.9" shape="square"/>
-<pad name="2" x="-1.25" y="0" drill="0.9" shape="octagon"/>
-<pad name="3" x="1.25" y="0" drill="0.9" shape="octagon"/>
+<pad name="1" x="-3.75" y="0" drill="1" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="1" shape="octagon"/>
+<pad name="3" x="1.25" y="0" drill="1" shape="octagon"/>
 <wire x1="-6.25" y1="1.6" x2="6.25" y2="1.6" width="0.127" layer="21"/>
 <wire x1="-6.25" y1="-2.2" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
 <text x="-6.25" y="1.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
@@ -9311,12 +9311,12 @@ I2C level switch</description>
 <wire x1="5.65" y1="-1.3" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
 <circle x="-6.85" y="0" radius="0.22360625" width="0.127" layer="21"/>
 <circle x="-4.95" y="0" radius="0.22360625" width="0.127" layer="22"/>
-<pad name="4" x="3.75" y="0" drill="0.9" shape="octagon"/>
+<pad name="4" x="3.75" y="0" drill="1" shape="octagon"/>
 </package>
 <package name="JST-EH-1X04-PWR+I2C">
-<pad name="VCC" x="-3.75" y="0" drill="0.9" shape="square"/>
-<pad name="GND" x="-1.25" y="0" drill="0.9" shape="octagon"/>
-<pad name="SCL" x="1.25" y="0" drill="0.9" shape="octagon"/>
+<pad name="VCC" x="-3.75" y="0" drill="1" shape="square"/>
+<pad name="GND" x="-1.25" y="0" drill="1" shape="octagon"/>
+<pad name="SCL" x="1.25" y="0" drill="1" shape="octagon"/>
 <wire x1="-6.25" y1="1.6" x2="6.25" y2="1.6" width="0.127" layer="21"/>
 <wire x1="-6.25" y1="-2.2" x2="-5.65" y2="-2.2" width="0.127" layer="21"/>
 <text x="-6.25" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
@@ -9340,7 +9340,7 @@ I2C level switch</description>
 <wire x1="5.65" y1="-1.3" x2="5.65" y2="-2.2" width="0.127" layer="21"/>
 <circle x="-6.85" y="0" radius="0.22360625" width="0.127" layer="21"/>
 <circle x="-4.95" y="0" radius="0.22360625" width="0.127" layer="22"/>
-<pad name="SDA" x="3.75" y="0" drill="0.9" shape="octagon"/>
+<pad name="SDA" x="3.75" y="0" drill="1" shape="octagon"/>
 <text x="-4.8" y="1.9" size="0.8128" layer="21" font="vector">VCC</text>
 <text x="-2.3" y="1.9" size="0.8128" layer="21" font="vector">GND</text>
 <text x="0.3" y="1.9" size="0.8128" layer="21" font="vector">SCL</text>
