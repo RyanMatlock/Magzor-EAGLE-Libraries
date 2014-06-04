@@ -8748,7 +8748,8 @@ GND</text>
 <wire x1="-6.985" y1="0.635" x2="-5.715" y2="-0.635" width="0.127" layer="51"/>
 <wire x1="-5.715" y1="0.635" x2="-6.985" y2="-0.635" width="0.127" layer="51"/>
 </package>
-<package name="TO92">
+<package name="TO92-ALT">
+<description>TO-92 kinked leads (tripod style)</description>
 <wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.09954"/>
 <wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.293591"/>
@@ -9425,7 +9426,8 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="6.54" y1="-5.08" x2="-5.39" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="-5.39" y1="-5.08" x2="-5.39" y2="5.98" width="0.127" layer="21"/>
 </package>
-<package name="TO92-ALT">
+<package name="TO92">
+<description>TO-92 inline leads, 0.1" pitch</description>
 <wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="21" curve="-34.293591"/>
 <wire x1="-2.667" y1="0" x2="2.667" y2="0" width="0.127" layer="51"/>
@@ -14301,7 +14303,7 @@ TI TXB0108</description>
 <gate name="G$1" symbol="TLE2426" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LP" package="TO92">
+<device name="LP" package="TO92-ALT">
 <connects>
 <connect gate="G$1" pin="COM" pad="2"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -14430,12 +14432,13 @@ TI TXB0108</description>
 </devices>
 </deviceset>
 <deviceset name="L4931" prefix="U" uservalue="yes">
-<description>STMicroelectronics LDO Regulator L4931</description>
+<description>STMicroelectronics LDO Regulator L4931
+primed version has tripod kinked leads, although they come from the manufacturer in 0.1" pitch (non-primed version)</description>
 <gates>
 <gate name="G$1" symbol="3-TERM-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="*-AP" package="TO92">
+<device name="*-AP'" package="TO92-ALT">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -14445,7 +14448,7 @@ TI TXB0108</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="*-AP*" package="TO92-ALT">
+<device name="*-AP" package="TO92">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="3"/>
