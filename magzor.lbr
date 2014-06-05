@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9471,6 +9471,25 @@ P/N: B2P-VH-FB-B</description>
 <rectangle x1="-5.334" y1="1.27" x2="-4.699" y2="1.778" layer="21"/>
 <rectangle x1="4.699" y1="1.27" x2="5.334" y2="1.778" layer="21"/>
 </package>
+<package name="48ASSP3S1M2RBT">
+<description>Grayhill 48ASSP3S1M2RBT SPDT slide switch, can handle 5A @ 20V</description>
+<pad name="1" x="-4.699" y="0" drill="1.8542" shape="square"/>
+<pad name="2" x="0" y="0" drill="1.8542" shape="octagon"/>
+<pad name="3" x="4.699" y="0" drill="1.8542" shape="octagon"/>
+<circle x="-6.985" y="0" radius="0.359209375" width="0.127" layer="21"/>
+<circle x="-6.985" y="0" radius="0.359209375" width="0.127" layer="22"/>
+<wire x1="-6.35" y1="3.302" x2="-6.35" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-3.302" x2="6.35" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-3.302" x2="6.35" y2="3.302" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.302" x2="-6.35" y2="3.302" width="0.127" layer="21"/>
+<wire x1="-4.699" y1="2.032" x2="-4.699" y2="-2.032" width="0.127" layer="51"/>
+<wire x1="-4.699" y1="-2.032" x2="4.699" y2="-2.032" width="0.127" layer="51"/>
+<wire x1="4.699" y1="-2.032" x2="4.699" y2="2.032" width="0.127" layer="51"/>
+<wire x1="4.699" y1="2.032" x2="-4.699" y2="2.032" width="0.127" layer="51"/>
+<rectangle x1="-4.445" y1="-1.778" x2="0" y2="1.778" layer="51"/>
+<text x="-6.35" y="3.683" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-6.35" y="-4.953" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -14727,6 +14746,23 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="P1" pad="5"/>
 <connect gate="G$1" pin="S" pad="3"/>
 <connect gate="G$1" pin="S1" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SW-SPDT" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SWITCH-SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-48ASSP3S1" package="48ASSP3S1M2RBT">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
