@@ -9353,9 +9353,9 @@ I2C level switch</description>
 <wire x1="1.16" y1="-0.9" x2="1.823" y2="-0.237" width="0.2032" layer="21"/>
 <wire x1="1.95" y1="-0.11" x2="1.95" y2="0.425" width="0.2032" layer="51"/>
 <wire x1="0.889" y1="0.425" x2="-0.889" y2="0.425" width="0.2032" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="0.6" shape="square" rot="R90"/>
-<pad name="2" x="0" y="0" drill="0.6" shape="octagon" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="0.6" shape="octagon" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
 <text x="-3.048" y="-2.413" size="1.016" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.048" y="0.889" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="-0.844" y1="0.425" x2="-1.696" y2="0.425" width="0.2032" layer="21"/>
@@ -9369,9 +9369,9 @@ I2C level switch</description>
 </package>
 <package name="SIP3-UA-FLAT">
 <description>Allegro Hall effect switches -- flat mount</description>
-<pad name="1" x="-2.54" y="0" drill="0.6" shape="square" rot="R90"/>
-<pad name="2" x="0" y="0" drill="0.6" shape="octagon" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="0.6" shape="octagon" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
 <text x="-3.048" y="-1.905" size="1.016" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.048" y="6.096" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <circle x="-3.683" y="0" radius="0.2032" width="0.127" layer="21"/>
