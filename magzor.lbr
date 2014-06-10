@@ -13281,20 +13281,20 @@ logo</text>
 <pin name="(T1/!OC4D!/ADC9)PD6" x="30.48" y="-2.54" length="middle" rot="R180"/>
 <pin name="(TXD1/INT3)PD3" x="30.48" y="-10.16" length="middle" rot="R180"/>
 <pin name="(XCK1/!CTS!)PD5" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="AREF" x="-30.48" y="10.16" length="middle" direction="pwr"/>
-<pin name="AVCC" x="-30.48" y="15.24" length="middle" direction="pwr"/>
+<pin name="AREF" x="-30.48" y="-5.08" length="middle" direction="pwr"/>
+<pin name="AVCC" x="-30.48" y="35.56" length="middle" direction="pwr"/>
 <pin name="RD+" x="-30.48" y="-38.1" length="middle"/>
 <pin name="RD-" x="-30.48" y="-35.56" length="middle"/>
-<pin name="GND" x="-30.48" y="2.54" length="middle" direction="pwr"/>
-<pin name="AGND" x="-30.48" y="-5.08" length="middle" direction="pwr"/>
-<pin name="RESET" x="-30.48" y="40.64" length="middle" direction="in" function="dot"/>
+<pin name="GND" x="-30.48" y="10.16" length="middle" direction="pwr"/>
+<pin name="AGND" x="-30.48" y="-7.62" length="middle" direction="pwr"/>
+<pin name="RESET" x="-30.48" y="30.48" length="middle" direction="in" function="dot"/>
 <pin name="UCAP" x="-30.48" y="-33.02" length="middle" direction="pas"/>
 <pin name="UGND" x="-30.48" y="-40.64" length="middle" direction="pwr"/>
 <pin name="UVCC" x="-30.48" y="-27.94" length="middle" direction="pwr"/>
 <pin name="VBUS" x="-30.48" y="-30.48" length="middle" direction="in"/>
-<pin name="VCC" x="-30.48" y="35.56" length="middle" direction="pwr"/>
-<pin name="XTAL1" x="-30.48" y="22.86" length="middle"/>
-<pin name="XTAL2" x="-30.48" y="27.94" length="middle"/>
+<pin name="VCC" x="-30.48" y="40.64" length="middle" direction="pwr"/>
+<pin name="XTAL1" x="-30.48" y="17.78" length="middle"/>
+<pin name="XTAL2" x="-30.48" y="22.86" length="middle"/>
 <text x="-25.4" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-25.4" y="43.942" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-8.382" size="1.4986" layer="94">D4(A6)</text>
