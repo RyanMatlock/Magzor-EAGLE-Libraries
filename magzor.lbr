@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -15011,7 +15011,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="78XX-REGULATOR" prefix="IC" uservalue="yes">
+<deviceset name="78XX-REGULATOR" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="3-TERM-REGULATOR" x="0" y="0"/>
 </gates>
@@ -15084,7 +15084,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA32U4">
+<deviceset name="ATMEGA32U4" prefix="U">
 <gates>
 <gate name="A" symbol="ATMEGA32U4" x="0" y="0"/>
 </gates>
