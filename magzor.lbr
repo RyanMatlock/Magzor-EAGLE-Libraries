@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="11" fill="8" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="11" fill="8" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -14960,6 +14960,60 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="O" pad="1"/>
 <connect gate="G$1" pin="P" pad="2"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA32U4">
+<gates>
+<gate name="A" symbol="ATMEGA32U4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-AU" package="TQFP44">
+<connects>
+<connect gate="A" pin="(!HWB!)PE2" pad="33"/>
+<connect gate="A" pin="(ADC0)PF0" pad="41"/>
+<connect gate="A" pin="(ADC1)PF1" pad="40"/>
+<connect gate="A" pin="(ADC11)PB4" pad="28"/>
+<connect gate="A" pin="(ADC4/TCK)PF4" pad="39"/>
+<connect gate="A" pin="(ADC5/TMS)PF5" pad="38"/>
+<connect gate="A" pin="(ADC6/TDO)PF6" pad="37"/>
+<connect gate="A" pin="(ADC7/TDI)PF7" pad="36"/>
+<connect gate="A" pin="(ICP1/ADC8)PD4" pad="25"/>
+<connect gate="A" pin="(ICP3/CLK0/OC4A)PC7" pad="32"/>
+<connect gate="A" pin="(INT6/AIN0)PE6" pad="1"/>
+<connect gate="A" pin="(OC0A/OC1C/!RTS!)PB7" pad="12"/>
+<connect gate="A" pin="(OC0B/SCL/INT0)PD0" pad="18"/>
+<connect gate="A" pin="(OC1A/!OC4B!/ADC12)PB5" pad="29"/>
+<connect gate="A" pin="(OC1B/OC4B/ADC13)PB6" pad="30"/>
+<connect gate="A" pin="(OC3A/!OC4A!)PC6" pad="31"/>
+<connect gate="A" pin="(PD0/MISO)PB3" pad="11"/>
+<connect gate="A" pin="(PDI/MOSI)PB2" pad="10"/>
+<connect gate="A" pin="(RXD1/AIN1/INT2)PD2" pad="20"/>
+<connect gate="A" pin="(SCLK)PB1" pad="9"/>
+<connect gate="A" pin="(SDA/INT1)PD1" pad="19"/>
+<connect gate="A" pin="(SS)PB0" pad="8"/>
+<connect gate="A" pin="(T0/OC4D/ADC10)PD7" pad="27"/>
+<connect gate="A" pin="(T1/!OC4D!/ADC9)PD6" pad="26"/>
+<connect gate="A" pin="(TXD1/INT3)PD3" pad="21"/>
+<connect gate="A" pin="(XCK1/!CTS!)PD5" pad="22"/>
+<connect gate="A" pin="AGND" pad="43"/>
+<connect gate="A" pin="AREF" pad="42"/>
+<connect gate="A" pin="AVCC" pad="24 44"/>
+<connect gate="A" pin="GND" pad="15 23 35"/>
+<connect gate="A" pin="RD+" pad="4"/>
+<connect gate="A" pin="RD-" pad="3"/>
+<connect gate="A" pin="RESET" pad="13"/>
+<connect gate="A" pin="UCAP" pad="6"/>
+<connect gate="A" pin="UGND" pad="5"/>
+<connect gate="A" pin="UVCC" pad="2"/>
+<connect gate="A" pin="VBUS" pad="7"/>
+<connect gate="A" pin="VCC" pad="14 34"/>
+<connect gate="A" pin="XTAL1" pad="17"/>
+<connect gate="A" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
