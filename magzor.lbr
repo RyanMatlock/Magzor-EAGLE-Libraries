@@ -13251,6 +13251,16 @@ names in red</text>
 <text x="1.27" y="27.178" size="1.4986" layer="94">MOSI</text>
 <text x="1.27" y="29.718" size="1.4986" layer="94">MISO</text>
 </symbol>
+<symbol name="SUPPLY_UGND">
+<pin name="UGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="1.778" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<text x="-3.556" y="-2.286" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SUPPLY_AGND">
+<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="1.778" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<text x="-3.302" y="-2.286" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB-1X04" prefix="USB" uservalue="yes">
@@ -15015,6 +15025,30 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="A" pin="XTAL1" pad="17"/>
 <connect gate="A" pin="XTAL2" pad="16"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UGND" prefix="SUPPLY">
+<gates>
+<gate name="A" symbol="SUPPLY_UGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AGND" prefix="SUPPLY">
+<gates>
+<gate name="A" symbol="SUPPLY_AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
