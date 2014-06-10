@@ -15120,7 +15120,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SP4021-01FTG" package="SOD323-UNI">
+<device name="-SP4021" package="SOD323-UNI">
 <connects>
 <connect gate="G$1" pin="A" pad="2/A"/>
 <connect gate="G$1" pin="C" pad="1/C"/>
