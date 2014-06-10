@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -13311,12 +13311,12 @@ logo</text>
 <text x="1.27" y="6.858" size="1.4986" layer="94">D7(i4)</text>
 <text x="-11.43" y="39.878" size="1.4986" layer="94">D11*</text>
 <text x="-5.08" y="14.478" size="1.4986" layer="94">D13*</text>
-<text x="8.89" y="-41.402" size="1.4986" layer="94">A0</text>
-<text x="8.89" y="-38.862" size="1.4986" layer="94">A1</text>
-<text x="3.81" y="-31.242" size="1.4986" layer="94">A2</text>
-<text x="3.81" y="-28.702" size="1.4986" layer="94">A3</text>
-<text x="3.81" y="-26.162" size="1.4986" layer="94">A4</text>
-<text x="3.81" y="-23.622" size="1.4986" layer="94">A5</text>
+<text x="3.81" y="-23.622" size="1.4986" layer="94">A0</text>
+<text x="3.81" y="-26.162" size="1.4986" layer="94">A1</text>
+<text x="3.81" y="-28.702" size="1.4986" layer="94">A2</text>
+<text x="3.81" y="-31.242" size="1.4986" layer="94">A3</text>
+<text x="8.89" y="-38.862" size="1.4986" layer="94">A4</text>
+<text x="8.89" y="-41.402" size="1.4986" layer="94">A5</text>
 <text x="-7.62" y="-41.91" size="1.016" layer="94">i&lt;x&gt;⇒ext. interrupt &lt;x&gt;
 *⇒PWM
 Arduino mapped
