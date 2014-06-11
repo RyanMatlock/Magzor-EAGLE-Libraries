@@ -14484,7 +14484,7 @@ names in red</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DUAL-SERVO" prefix="J" uservalue="yes">
+<deviceset name="HEADER-2X03-DUAL-SERVO" prefix="J" uservalue="yes">
 <gates>
 <gate name="A" symbol="HEADER-1X03" x="-7.62" y="0"/>
 <gate name="B" symbol="HEADER-1X03" x="7.62" y="0"/>
