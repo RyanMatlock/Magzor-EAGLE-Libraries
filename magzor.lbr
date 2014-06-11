@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9686,6 +9686,55 @@ P/N: B2P-VH-FB-B</description>
 <rectangle x1="-5.1" y1="-0.3" x2="-4" y2="0.3" layer="51"/>
 <rectangle x1="4" y1="-0.3" x2="5.1" y2="0.3" layer="51"/>
 </package>
+<package name="HEADER-2X03-ICSP-FC-6P">
+<circle x="-2.54" y="-3.048" radius="0.254" width="0.127" layer="22"/>
+<pad name="MISO" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="SCK" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="RST" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="VCC" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="MOSI" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="GND" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<text x="-6.35" y="3.302" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-6.604" y="-3.048" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-6.35" y1="3.048" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-1.27" x2="-6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-1.27" x2="6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.048" x2="6.35" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-3.048" x2="-1.016" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-3.048" x2="1.016" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="1.016" y1="-3.048" x2="6.35" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-3.048" x2="-1.016" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-3.81" x2="1.016" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="1.016" y1="-3.81" x2="1.016" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-4.826" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-4.826" y1="1.27" x2="-4.826" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.826" y1="-1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="4.826" y2="1.27" width="0.127" layer="21"/>
+<wire x1="4.826" y1="1.27" x2="4.826" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.826" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.175" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="1.905" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -14225,7 +14274,7 @@ names in red</text>
 <gate name="G$1" symbol="HEADER-2X03-BOTH-VISIBLE-(WIDE)" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HEADER-2X03-ICSP">
+<device name="-LRG" package="HEADER-2X03-ICSP">
 <connects>
 <connect gate="G$1" pin="1" pad="MISO"/>
 <connect gate="G$1" pin="2" pad="VCC"/>
@@ -14239,6 +14288,19 @@ names in red</text>
 </technologies>
 </device>
 <device name="-SM" package="HEADER-2X03-ICSP-SM">
+<connects>
+<connect gate="G$1" pin="1" pad="MISO"/>
+<connect gate="G$1" pin="2" pad="VCC"/>
+<connect gate="G$1" pin="3" pad="SCK"/>
+<connect gate="G$1" pin="4" pad="MOSI"/>
+<connect gate="G$1" pin="5" pad="RST"/>
+<connect gate="G$1" pin="6" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-FC-6P" package="HEADER-2X03-ICSP-FC-6P">
 <connects>
 <connect gate="G$1" pin="1" pad="MISO"/>
 <connect gate="G$1" pin="2" pad="VCC"/>
