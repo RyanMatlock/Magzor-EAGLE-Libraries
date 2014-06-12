@@ -13466,6 +13466,16 @@ names in red</text>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-BS170" package="TO92">
+<connects>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="USB-1X05" prefix="USB" uservalue="yes">
