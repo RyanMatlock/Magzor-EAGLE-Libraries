@@ -13966,7 +13966,7 @@ names in red</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-PW" package="TSSOP16-PAD">
+<device name="PW" package="TSSOP16-PAD">
 <connects>
 <connect gate="G$1" pin="AIN1" pad="16"/>
 <connect gate="G$1" pin="AIN2" pad="15"/>
