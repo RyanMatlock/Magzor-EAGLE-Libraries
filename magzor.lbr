@@ -13456,7 +13456,7 @@ names in red</text>
 <gate name="G$1" symbol="MOSFET-SD-DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-VISHAY-SI2392DS" package="SOT23-3">
+<device name="-SI2392DS" package="SOT23-3">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -13470,6 +13470,16 @@ names in red</text>
 <connects>
 <connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-IRF730A" package="TO220">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
