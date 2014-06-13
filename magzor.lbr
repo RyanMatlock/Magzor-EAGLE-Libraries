@@ -15510,11 +15510,20 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADDR-5P">
+<deviceset name="ADDR-5P" prefix="JP" uservalue="yes">
 <gates>
+<gate name="G$1" symbol="ADDR-5P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="JP-5X-ADDR">
+<connects>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="REF" pad="REF0 REF1 REF2 REF3 REF4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
