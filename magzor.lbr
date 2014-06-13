@@ -7200,10 +7200,10 @@ RST</text>
 <wire x1="-1.27" y1="-1.016" x2="-1.27" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="-1.143" y1="-0.254" x2="-1.397" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="-1.397" y1="0.254" x2="-1.143" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF0" x="-1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A0" x="-1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<text x="-2.54" y="-1.651" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="3.556" y="-1.651" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<smd name="REF0" x="-1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A0" x="-1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<text x="-2.286" y="-4.064" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.286" y="2.032" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="2.286" y1="1.397" x2="2.286" y2="-1.397" width="0.1524" layer="21"/>
 <wire x1="0.254" y1="1.397" x2="0.508" y2="1.651" width="0.1524" layer="21" curve="-90"/>
 <wire x1="0.508" y1="-1.651" x2="0.254" y2="-1.397" width="0.1524" layer="21" curve="-90"/>
@@ -7216,14 +7216,16 @@ RST</text>
 <wire x1="1.27" y1="-1.016" x2="1.27" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="1.397" y1="-0.254" x2="1.143" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="1.143" y1="0.254" x2="1.397" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF1" x="1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A1" x="1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF1" x="1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A1" x="1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="-1.905" y="-2.794" size="0.8128" layer="21" font="vector">A0</text>
 <text x="0.635" y="-2.794" size="0.8128" layer="21" font="vector">A1</text>
 <wire x1="-2.286" y1="1.651" x2="2.286" y2="1.651" width="0.127" layer="39"/>
-<wire x1="2.286" y1="1.651" x2="2.286" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="2.286" y1="-1.651" x2="-2.286" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="-2.286" y1="-1.651" x2="-2.286" y2="1.651" width="0.127" layer="39"/>
+<wire x1="2.286" y1="1.651" x2="2.286" y2="-1.651" width="0.127" layer="39"/>
+<rectangle x1="-2.1082" y1="-1.397" x2="-0.4318" y2="1.397" layer="29"/>
+<rectangle x1="0.4318" y1="-1.397" x2="2.1082" y2="1.397" layer="29"/>
 </package>
 <package name="JP-3X-ADDR">
 <description>jumper; 2 positions x 3 addresses</description>
@@ -7239,10 +7241,10 @@ RST</text>
 <wire x1="-2.54" y1="-1.016" x2="-2.54" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="-2.413" y1="-0.254" x2="-2.667" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="-2.667" y1="0.254" x2="-2.413" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF0" x="-2.54" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A0" x="-2.54" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<text x="-3.81" y="-1.651" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="4.826" y="-1.651" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<smd name="REF0" x="-2.54" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A0" x="-2.54" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<text x="-3.556" y="-4.064" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.556" y="2.032" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="1.016" y1="1.397" x2="1.016" y2="-1.397" width="0.1524" layer="21"/>
 <wire x1="-1.016" y1="1.397" x2="-0.762" y2="1.651" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-0.762" y1="-1.651" x2="-1.016" y2="-1.397" width="0.1524" layer="21" curve="-90"/>
@@ -7255,8 +7257,8 @@ RST</text>
 <wire x1="0" y1="-1.016" x2="0" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="0.127" y1="-0.254" x2="-0.127" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF1" x="0" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A1" x="0" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF1" x="0" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A1" x="0" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="-3.175" y="-2.794" size="0.8128" layer="21" font="vector">A0</text>
 <text x="-0.635" y="-2.794" size="0.8128" layer="21" font="vector">A1</text>
 <wire x1="3.556" y1="1.397" x2="3.556" y2="-1.397" width="0.1524" layer="21"/>
@@ -7271,13 +7273,16 @@ RST</text>
 <wire x1="2.54" y1="-1.016" x2="2.54" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="2.667" y1="-0.254" x2="2.413" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="2.413" y1="0.254" x2="2.667" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF2" x="2.54" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A2" x="2.54" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF2" x="2.54" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A2" x="2.54" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="1.905" y="-2.794" size="0.8128" layer="21" font="vector">A2</text>
 <wire x1="-3.556" y1="1.651" x2="3.556" y2="1.651" width="0.127" layer="39"/>
-<wire x1="3.556" y1="1.651" x2="3.556" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="3.556" y1="-1.651" x2="-3.556" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="-3.556" y1="-1.651" x2="-3.556" y2="1.651" width="0.127" layer="39"/>
+<wire x1="3.556" y1="1.651" x2="3.556" y2="-1.651" width="0.127" layer="39"/>
+<rectangle x1="-3.3782" y1="-1.397" x2="-1.7018" y2="1.397" layer="29"/>
+<rectangle x1="-0.8382" y1="-1.397" x2="0.8382" y2="1.397" layer="29"/>
+<rectangle x1="1.7018" y1="-1.397" x2="3.3782" y2="1.397" layer="29"/>
 </package>
 <package name="JP-4X-ADDR">
 <description>jumper; 2 positions x 4 addresses</description>
@@ -7293,10 +7298,10 @@ RST</text>
 <wire x1="-3.81" y1="-1.016" x2="-3.81" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="-3.683" y1="-0.254" x2="-3.937" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="-3.937" y1="0.254" x2="-3.683" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF0" x="-3.81" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A0" x="-3.81" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<text x="-5.08" y="-1.651" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="6.096" y="-1.651" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<smd name="REF0" x="-3.81" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A0" x="-3.81" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<text x="-4.826" y="-4.064" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-4.826" y="2.032" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="-0.254" y1="1.397" x2="-0.254" y2="-1.397" width="0.1524" layer="21"/>
 <wire x1="-2.286" y1="1.397" x2="-2.032" y2="1.651" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-2.032" y1="-1.651" x2="-2.286" y2="-1.397" width="0.1524" layer="21" curve="-90"/>
@@ -7309,8 +7314,8 @@ RST</text>
 <wire x1="-1.27" y1="-1.016" x2="-1.27" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="-1.143" y1="-0.254" x2="-1.397" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="-1.397" y1="0.254" x2="-1.143" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF1" x="-1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A1" x="-1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF1" x="-1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A1" x="-1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="-4.445" y="-2.794" size="0.8128" layer="21" font="vector">A0</text>
 <text x="-1.905" y="-2.794" size="0.8128" layer="21" font="vector">A1</text>
 <wire x1="2.286" y1="1.397" x2="2.286" y2="-1.397" width="0.1524" layer="21"/>
@@ -7325,8 +7330,8 @@ RST</text>
 <wire x1="1.27" y1="-1.016" x2="1.27" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="1.397" y1="-0.254" x2="1.143" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="1.143" y1="0.254" x2="1.397" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF2" x="1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A2" x="1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF2" x="1.27" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A2" x="1.27" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="0.635" y="-2.794" size="0.8128" layer="21" font="vector">A2</text>
 <wire x1="4.826" y1="1.397" x2="4.826" y2="-1.397" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="1.397" x2="3.048" y2="1.651" width="0.1524" layer="21" curve="-90"/>
@@ -7340,13 +7345,17 @@ RST</text>
 <wire x1="3.81" y1="-1.016" x2="3.81" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="3.937" y1="-0.254" x2="3.683" y2="-0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="3.683" y1="0.254" x2="3.937" y2="0.254" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="REF3" x="3.81" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
-<smd name="A3" x="3.81" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90"/>
+<smd name="REF3" x="3.81" y="-0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
+<smd name="A3" x="3.81" y="0.762" dx="1.1684" dy="1.6002" layer="1" rot="R90" stop="no"/>
 <text x="3.175" y="-2.794" size="0.8128" layer="21" font="vector">A3</text>
 <wire x1="-4.826" y1="1.651" x2="4.826" y2="1.651" width="0.127" layer="39"/>
-<wire x1="4.826" y1="1.651" x2="4.826" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="4.826" y1="-1.651" x2="-4.826" y2="-1.651" width="0.127" layer="39"/>
 <wire x1="-4.826" y1="-1.651" x2="-4.826" y2="1.651" width="0.127" layer="39"/>
+<wire x1="4.826" y1="1.651" x2="4.826" y2="-1.651" width="0.127" layer="39"/>
+<rectangle x1="-4.6482" y1="-1.397" x2="-2.9718" y2="1.397" layer="29"/>
+<rectangle x1="-2.1082" y1="-1.397" x2="-0.4318" y2="1.397" layer="29"/>
+<rectangle x1="0.4318" y1="-1.397" x2="2.1082" y2="1.397" layer="29"/>
+<rectangle x1="2.9718" y1="-1.397" x2="4.6482" y2="1.397" layer="29"/>
 </package>
 <package name="HEADER-2X01-RESET">
 <pad name="MCU" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R90"/>
@@ -14604,7 +14613,7 @@ names in red</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADDR-2" prefix="JP" uservalue="yes">
+<deviceset name="ADDR-2P" prefix="JP" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="ADDR-2P" x="0" y="0"/>
 </gates>
