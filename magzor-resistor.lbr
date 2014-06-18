@@ -66,8 +66,8 @@ also fixes some issues in standard resistor library (e.g. pins on polarized capa
 <description>Electrolytic capacitor, diameter: 8mm, lead spacing (pitch): 3.5mm</description>
 <pad name="+" x="-1.75" y="0" drill="1" diameter="2"/>
 <pad name="-" x="1.75" y="0" drill="1" diameter="2" shape="octagon"/>
-<text x="-2.5" y="1.5" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-2.25" y="-2.75" size="1.016" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-2.5" y="1.5" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.25" y="-2.75" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
 <wire x1="-0.125" y1="1" x2="-0.5" y2="1" width="0.1016" layer="21"/>
 <wire x1="-0.5" y1="1" x2="-0.5" y2="0" width="0.1016" layer="21"/>
@@ -95,8 +95,8 @@ also fixes some issues in standard resistor library (e.g. pins on polarized capa
 <wire x1="-4.375" y1="1.5" x2="-3.625" y2="1.5" width="0.1524" layer="21"/>
 <pad name="+" x="-2.5" y="0" drill="1.2" diameter="2.5"/>
 <pad name="-" x="2.5" y="0" drill="1.2" diameter="2.5" shape="octagon"/>
-<text x="-3.25" y="2" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-3.25" y="-3.25" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-3.25" y="2" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.25" y="-3.25" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <circle x="0" y="0" radius="5" width="0.1524" layer="21"/>
 <wire x1="-0.25" y1="1.25" x2="-0.75" y2="1.25" width="0.127" layer="21"/>
 <wire x1="-0.75" y1="1.25" x2="-0.75" y2="0" width="0.127" layer="21"/>
