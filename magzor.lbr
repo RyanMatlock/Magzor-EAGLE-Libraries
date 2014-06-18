@@ -78,7 +78,7 @@
 <layer number="103" name="Enclosure" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Fittings" color="3" fill="1" visible="no" active="yes"/>
-<layer number="106" name="Function" color="5" fill="1" visible="no" active="yes"/>
+<layer number="106" name="Function" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Pin" color="4" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
@@ -10110,6 +10110,44 @@ P/N: B2P-VH-FB-B</description>
 <text x="-0.75" y="2" size="0.6096" layer="21" font="vector">SIG</text>
 <text x="1.75" y="2" size="0.6096" layer="21" font="vector">GND</text>
 </package>
+<package name="TO220-5">
+<pad name="2" x="-1.7" y="-1.198" drill="0.9" shape="long" rot="R90"/>
+<pad name="4" x="1.7" y="-1.198" drill="0.9" shape="long" rot="R90"/>
+<pad name="1" x="-3.4" y="-5.098" drill="0.9" shape="long" rot="R90"/>
+<pad name="3" x="0" y="-5.098" drill="0.9" shape="long" rot="R90"/>
+<pad name="5" x="3.4" y="-5.098" drill="0.9" shape="long" rot="R90"/>
+<text x="-5.08" y="-10.2362" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-8.509" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="-4.953" y="-5.098" radius="0.254" width="0.127" layer="22"/>
+<circle x="-4.953" y="-5.098" radius="0.254" width="0.127" layer="21"/>
+<rectangle x1="-5.08" y1="2.032" x2="5.08" y2="3.302" layer="51"/>
+<wire x1="-4.953" y1="2.032" x2="-4.953" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="4.953" y1="-0.381" x2="4.953" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-0.381" x2="-4.572" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="4.572" y1="-1.143" x2="4.953" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-0.381" x2="-2.794" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-0.381" x2="0.635" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="-0.381" x2="4.953" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-1.143" x2="-2.794" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.143" x2="0.635" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="-1.143" x2="4.572" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-2.794" y1="-0.381" x2="-0.635" y2="-0.381" width="0.2032" layer="51"/>
+<wire x1="-2.794" y1="-1.143" x2="-0.635" y2="-1.143" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="-0.381" x2="2.794" y2="-0.381" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="-1.143" x2="2.794" y2="-1.143" width="0.2032" layer="51"/>
+<wire x1="-5.08" y1="2.032" x2="5.08" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.032" x2="5.08" y2="3.302" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="3.302" x2="-5.08" y2="3.302" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="3.302" x2="-5.08" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="-3.39725" y1="-5.1435" x2="-3.39725" y2="-1.55575" width="0.6096" layer="51"/>
+<wire x1="0" y1="-5.1435" x2="0" y2="-1.55575" width="0.6096" layer="51"/>
+<wire x1="3.39725" y1="-5.1435" x2="3.39725" y2="-1.55575" width="0.6096" layer="51"/>
+<rectangle x1="-3.70205" y1="-1.6637" x2="-3.09245" y2="-1.143" layer="51"/>
+<rectangle x1="-0.3048" y1="-1.6637" x2="0.3048" y2="-1.143" layer="51"/>
+<rectangle x1="3.09245" y1="-1.6637" x2="3.70205" y2="-1.143" layer="51"/>
+<wire x1="-1.7018" y1="-1.21285" x2="-1.7018" y2="-1.1811" width="0.6096" layer="51"/>
+<wire x1="1.7018" y1="-1.2065" x2="1.7018" y2="-1.17475" width="0.6096" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -14030,16 +14068,29 @@ Arduino-mapped names in red&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCHING-REGULATOR" prefix="U" uservalue="yes">
+<deviceset name="TL2575" prefix="U" uservalue="yes">
+<description>TI TL2575 1A step-down switching voltage regulators (buck converter)</description>
 <gates>
 <gate name="G$1" symbol="SWITCHING-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-TO-263" package="TO263">
+<device name="-KTT" package="TO263">
 <connects>
 <connect gate="G$1" pin="!ON" pad="5"/>
 <connect gate="G$1" pin="FDBK" pad="4"/>
 <connect gate="G$1" pin="GND" pad="3 6"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-KV" package="TO220-5">
+<connects>
+<connect gate="G$1" pin="!ON" pad="5"/>
+<connect gate="G$1" pin="FDBK" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
