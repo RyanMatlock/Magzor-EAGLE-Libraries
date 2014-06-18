@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -62,12 +62,10 @@
 <description>Magzor resistor library -- additional resistors, capacitors, and inductors not found in standard resistor library (i.e. stock resistor.lbr)&lt;br&gt;
 also fixes some issues in standard resistor library (e.g. pins on polarized capacitor are swappable even though they shouldn't be)</description>
 <packages>
-<package name="C-EL-D8MM,P3.5MM">
+<package name="C-E-D8MM,P3.5MM">
 <description>Electrolytic capacitor, diameter: 8mm, lead spacing (pitch): 3.5mm</description>
-<wire x1="-3.052" y1="1.282" x2="-3.052" y2="0.52" width="0.1524" layer="21"/>
-<wire x1="-3.433" y1="0.901" x2="-2.671" y2="0.901" width="0.1524" layer="21"/>
-<pad name="+" x="-1.75" y="0" drill="0.9" diameter="2"/>
-<pad name="-" x="1.75" y="0" drill="0.9" diameter="2" shape="octagon"/>
+<pad name="+" x="-1.75" y="0" drill="1" diameter="2"/>
+<pad name="-" x="1.75" y="0" drill="1" diameter="2" shape="octagon"/>
 <text x="-2.5" y="1.5" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-2.25" y="-2.75" size="1.016" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
@@ -86,6 +84,33 @@ also fixes some issues in standard resistor library (e.g. pins on polarized capa
 <wire x1="0.5" y1="0" x2="0.625" y2="0" width="0.1016" layer="21"/>
 <wire x1="-0.625" y1="0" x2="-1.75" y2="0" width="0.1016" layer="51"/>
 <wire x1="0.625" y1="0" x2="1.75" y2="0" width="0.1016" layer="51"/>
+<wire x1="-3" y1="1.375" x2="-3" y2="0.625" width="0.1524" layer="21"/>
+<wire x1="-3.375" y1="1" x2="-2.625" y2="1" width="0.1524" layer="21"/>
+</package>
+<package name="C-E-D10MM,P5MM">
+<description>Electrolytic capacitor, diameter: 10mm, lead spacing (pitch): 5mm</description>
+<wire x1="-4" y1="1.875" x2="-4" y2="1.125" width="0.1524" layer="21"/>
+<wire x1="-4.375" y1="1.5" x2="-3.625" y2="1.5" width="0.1524" layer="21"/>
+<pad name="+" x="-2.5" y="0" drill="1.2" diameter="2.5"/>
+<pad name="-" x="2.5" y="0" drill="1.2" diameter="2.5" shape="octagon"/>
+<text x="-3.25" y="2" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.25" y="-3.25" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="5" width="0.1524" layer="21"/>
+<wire x1="-0.25" y1="1.25" x2="-0.75" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="1.25" x2="-0.75" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="0" x2="-0.75" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1.25" x2="-0.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-1.25" x2="-0.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="0.25" y1="1.25" x2="0.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-1.25" x2="0.75" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-1.25" x2="0.75" y2="0" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0" x2="0.75" y2="1.25" width="0.127" layer="21"/>
+<wire x1="0.75" y1="1.25" x2="0.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="0" x2="-1" y2="0" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0" x2="1" y2="0" width="0.127" layer="21"/>
+<rectangle x1="0.25" y1="-1.25" x2="0.75" y2="1.25" layer="21"/>
+<wire x1="-1" y1="0" x2="-2.5" y2="0" width="0.127" layer="51"/>
+<wire x1="1" y1="0" x2="2.5" y2="0" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -109,7 +134,16 @@ also fixes some issues in standard resistor library (e.g. pins on polarized capa
 <gate name="G$1" symbol="C-POL-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-EL-D8MM,P3.5MM" package="C-EL-D8MM,P3.5MM">
+<device name="-E-D8MM,P3.5MM" package="C-E-D8MM,P3.5MM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-E-D8MM,P5MM" package="C-E-D8MM,P3.5MM">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
