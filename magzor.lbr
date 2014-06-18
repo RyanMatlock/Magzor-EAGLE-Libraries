@@ -10148,6 +10148,14 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="-1.7018" y1="-1.21285" x2="-1.7018" y2="-1.1811" width="0.6096" layer="51"/>
 <wire x1="1.7018" y1="-1.2065" x2="1.7018" y2="-1.17475" width="0.6096" layer="51"/>
 </package>
+<package name="507302B00000G">
+<description>Aavid Thermalloy 507302B00000G Heat Sinks TO-220 HORZ. 24.0 Thermal Resistance (ºC/W) LO-PRO CHANNEL STYLE</description>
+<wire x1="-9.525" y1="0" x2="9.525" y2="0" width="0.508" layer="21"/>
+<wire x1="9.525" y1="0" x2="9.525" y2="-9.652" width="0.508" layer="21"/>
+<wire x1="-9.525" y1="0" x2="-9.525" y2="-9.652" width="0.508" layer="21"/>
+<text x="11.43" y="-9.525" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-10.16" y="-9.525" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -13855,6 +13863,17 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <text x="-3.81" y="2.54" size="1.27" layer="94" rot="R90">HI</text>
 <text x="5.08" y="2.286" size="1.27" layer="94" rot="R90">LO</text>
 </symbol>
+<symbol name="HEAT-SINK">
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="6.35" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="1.27" x2="0" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="3.81" x2="0" y2="6.35" width="0.254" layer="94" curve="-90"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="6.35" width="0.254" layer="94" curve="-90"/>
+<text x="-3.81" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB-1X04" prefix="USB" uservalue="yes">
@@ -15871,6 +15890,18 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="P" pad="2 5"/>
 <connect gate="G$1" pin="S" pad="3 6"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEAT-SINK" prefix="HS" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="HEAT-SINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TO220-24ºC/W" package="507302B00000G">
 <technologies>
 <technology name=""/>
 </technologies>
