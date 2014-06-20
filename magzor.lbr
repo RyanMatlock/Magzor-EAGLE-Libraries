@@ -14043,6 +14043,32 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="SWITCH-DPDT-ON-OFF">
+<text x="-8.89" y="2.54" size="1.27" layer="94" rot="R90">ON</text>
+<text x="10.16" y="2.286" size="1.27" layer="94" rot="R90">OFF</text>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.905" x2="-6.985" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-3.175" x2="5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.905" x2="3.175" y2="3.175" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="4.318" y1="0" x2="-10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="-1.27" width="0.254" layer="94"/>
+<text x="12.7" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="15.24" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P1" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="OFF1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="ON1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P2" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="OFF2" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="ON2" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB-1X04" prefix="USB" uservalue="yes">
@@ -16119,6 +16145,26 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="B" pad="3"/>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-DPDT-ON-OFF" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SWITCH-DPDT-ON-OFF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-JS202011" package="JS202011CQN-ON-OFF">
+<connects>
+<connect gate="G$1" pin="OFF1" pad="OFF1"/>
+<connect gate="G$1" pin="OFF2" pad="OFF2"/>
+<connect gate="G$1" pin="ON1" pad="ON1"/>
+<connect gate="G$1" pin="ON2" pad="ON2"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
