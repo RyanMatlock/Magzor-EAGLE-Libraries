@@ -15986,7 +15986,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="SW-SPDT-ON-OFF">
+<deviceset name="SW-SPDT-ON-OFF" prefix="SW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SWITCH-SPDT-ON-OFF" x="0" y="0"/>
 </gates>
