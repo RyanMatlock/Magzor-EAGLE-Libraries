@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -12911,7 +12911,7 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
-<symbol name="LDO-REGULATOR-MCP1801">
+<symbol name="MCP1801">
 <pin name="VIN" x="-10.16" y="5.08" length="short"/>
 <pin name="!SHDN!" x="-10.16" y="0" length="short"/>
 <pin name="GND" x="-10.16" y="-5.08" length="short"/>
@@ -13295,7 +13295,7 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="3-TERM-REGULATOR">
+<symbol name="3-TERM-FIXED-REGULATOR">
 <description>useful for LDO/Linear regulators in TO92, TO220, and other 3 terminal packages</description>
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -13481,7 +13481,8 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <pin name="4" x="7.62" y="-2.54" visible="pad" length="short" rot="R180"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="LEVEL-SHIFTER-BIDIRECTIONAL-8BIT-TI-TXB0108">
+<symbol name="TXB0108">
+<description>TI TXB0108 8 bit bidirectional level shifter</description>
 <pin name="A1" x="-12.7" y="7.62" length="short"/>
 <pin name="B1" x="12.7" y="7.62" length="short" rot="R180"/>
 <wire x1="-10.16" y1="7.62" x2="-1.524" y2="7.62" width="0.1524" layer="94"/>
@@ -13962,21 +13963,22 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="4-TERM-REGULATOR">
+<symbol name="4-TERM-FIXED-REGULATOR">
+<description>kind of ugly, but it's a drop-in replacement for 3 terminal fixed regulators</description>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <text x="-5.08" y="8.255" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="5.715" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-4.445" y="1.905" size="1.27" layer="97">IN</text>
+<text x="-4.445" y="-0.635" size="1.27" layer="97">IN</text>
 <text x="-1.905" y="-4.445" size="1.27" layer="97">GND</text>
-<text x="0.635" y="1.905" size="1.27" layer="97">OUT</text>
-<pin name="IN" x="-7.62" y="2.54" visible="pad" length="short"/>
+<text x="0.635" y="-0.635" size="1.27" layer="97">OUT</text>
+<pin name="IN" x="-7.62" y="0" visible="pad" length="short"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="OUT" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="EN" x="-7.62" y="-2.54" visible="pad" length="short"/>
-<text x="-4.445" y="-3.175" size="1.27" layer="97">EN</text>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="EN" x="-7.62" y="2.54" visible="pad" length="short"/>
+<text x="-4.445" y="1.905" size="1.27" layer="97">EN</text>
 </symbol>
 <symbol name="SWITCH-SPDT">
 <wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
@@ -14900,15 +14902,15 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <deviceset name="MCP1801" prefix="U">
 <description>Microchip MCP1801 150mA LDO</description>
 <gates>
-<gate name="G$1" symbol="LDO-REGULATOR-MCP1801" x="0" y="0"/>
+<gate name="G$1" symbol="4-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="T" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="!SHDN!" pad="3"/>
+<connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="5"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15505,7 +15507,7 @@ Arduino-mapped names in red&lt;br&gt;</description>
 </deviceset>
 <deviceset name="LDO-REGULATOR-LM1117" prefix="U" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="3-TERM-REGULATOR" x="0" y="0"/>
+<gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-SOT223" package="SOT223-4">
@@ -15678,7 +15680,7 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <description>8 bit bidirectional level shifter
 TI TXB0108</description>
 <gates>
-<gate name="G$1" symbol="LEVEL-SHIFTER-BIDIRECTIONAL-8BIT-TI-TXB0108" x="0" y="0"/>
+<gate name="G$1" symbol="TXB0108" x="0" y="0"/>
 </gates>
 <devices>
 <device name="PW" package="TSSOP20">
@@ -15907,7 +15909,7 @@ TI TXB0108</description>
 <description>STMicroelectronics LDO Regulator L4931
 primed version has tripod kinked leads, although they come from the manufacturer in 0.1" pitch (non-primed version)</description>
 <gates>
-<gate name="G$1" symbol="3-TERM-REGULATOR" x="0" y="0"/>
+<gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="*-AP'" package="TO92-ALT">
@@ -16083,7 +16085,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </deviceset>
 <deviceset name="78XX-REGULATOR" prefix="U" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="3-TERM-REGULATOR" x="0" y="0"/>
+<gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-TO220" package="TO220">
@@ -16101,7 +16103,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <deviceset name="NJM2396" prefix="IC" uservalue="yes">
 <description>EN should be high or open circuit to enable the chip, pulling to ground turns it off</description>
 <gates>
-<gate name="G$1" symbol="4-TERM-REGULATOR" x="0" y="2.54"/>
+<gate name="G$1" symbol="4-TERM-FIXED-REGULATOR" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="TO220-4">
