@@ -114,7 +114,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
-<description>Magzor Corp.: provides generic connectors and headers&lt;br&gt;
+<description>Magzor connectors and headers library&lt;br&gt;
 Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on schematic, you'll end up with text "&gt;1", "&gt;2" on schematic.  To prevent this, set those attributes to the empty string.</description>
 <packages>
 <package name="P0.1&quot;-1X04-1SQ">
