@@ -213,8 +213,8 @@ based on Vishay recommendation</description>
 <wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="39"/>
 <wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="39"/>
-<smd name="1" x="-0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no"/>
-<smd name="2" x="0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no"/>
+<smd name="A" x="-0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no"/>
+<smd name="C" x="0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no"/>
 <rectangle x1="-1.3335" y1="-0.6604" x2="-0.254" y2="0.6604" layer="29"/>
 <rectangle x1="0.254" y1="-0.6604" x2="1.3335" y2="0.6604" layer="29"/>
 </package>
@@ -372,6 +372,10 @@ based on Vishay recommendation</description>
 </gates>
 <devices>
 <device name="-0805" package="SMD-D-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
