@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6776,18 +6776,25 @@ OSH Park DRC complains about this</description>
 <smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1" stop="no"/>
 <smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1" stop="no"/>
 <smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1" stop="no"/>
-<text x="-1.878" y="-1.878" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<text x="3.148" y="-1.878" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-1.8" y="-1.9" size="0.8128" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.6" y="-1.9" size="0.8128" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5" layer="51"/>
 <rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5" layer="51"/>
 <rectangle x1="-1.1875" y1="-1.5" x2="-0.7125" y2="-0.7124" layer="51"/>
 <rectangle x1="-0.2375" y1="-1.5" x2="0.2375" y2="-0.7124" layer="51"/>
 <rectangle x1="0.7125" y1="-1.5" x2="1.1875" y2="-0.7124" layer="51"/>
-<circle x="-0.95" y="-2.35" radius="0.2" width="0.127" layer="21"/>
+<circle x="-0.95" y="-2.3" radius="0.2" width="0.127" layer="21"/>
 <wire x1="-1.651" y1="2.032" x2="1.651" y2="2.032" width="0.127" layer="39"/>
 <wire x1="1.651" y1="2.032" x2="1.651" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="1.651" y1="-2.032" x2="-1.651" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-2.032" x2="-1.651" y2="2.032" width="0.127" layer="39"/>
+<rectangle x1="-1.25" y1="0.705" x2="-0.65" y2="1.905" layer="29"/>
+<rectangle x1="0.65" y1="0.705" x2="1.25" y2="1.905" layer="29"/>
+<rectangle x1="-1.25" y1="-1.905" x2="-0.65" y2="-0.705" layer="29"/>
+<rectangle x1="-0.3" y1="-1.905" x2="0.3" y2="-0.705" layer="29"/>
+<rectangle x1="0.65" y1="-1.905" x2="1.25" y2="-0.705" layer="29"/>
+<wire x1="-1.419" y1="-0.787" x2="-1.419" y2="0.788" width="0.127" layer="21"/>
+<wire x1="1.419" y1="0.788" x2="1.419" y2="-0.787" width="0.127" layer="21"/>
 </package>
 <package name="QFN20_">
 <description>0.65mm x 0.3mm pad (not enough space for OSH Park DRC)</description>
@@ -14890,12 +14897,13 @@ Arduino-mapped names in red&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LDO-REGULATOR-MCP1801" prefix="U" uservalue="yes">
+<deviceset name="MCP1801" prefix="U">
+<description>Microchip MCP1801 150mA LDO</description>
 <gates>
 <gate name="G$1" symbol="LDO-REGULATOR-MCP1801" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SOT23" package="SOT23-5">
+<device name="T" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="!SHDN!" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
