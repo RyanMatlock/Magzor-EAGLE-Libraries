@@ -26,7 +26,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -67,7 +67,7 @@
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="Enclosure" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
-<layer number="105" name="Fittings" color="3" fill="1" visible="no" active="yes"/>
+<layer number="105" name="Fittings" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="Function" color="5" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Pin" color="4" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
@@ -1314,6 +1314,51 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <wire x1="9.525" y1="-1.27" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="8.255" y1="-1.27" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
 </package>
+<package name="FCI-10033526-XXX1X">
+<description>FCI 10033526-XXX1X (e.g. 10033526-N3212LF) USB Mini B receptacle</description>
+<smd name="NC1" x="-4.45" y="2.98" dx="2" dy="2.5" layer="1"/>
+<smd name="NC3" x="-4.45" y="8.43" dx="2" dy="2.5" layer="1"/>
+<smd name="NC4" x="4.45" y="8.43" dx="2" dy="2.5" layer="1"/>
+<smd name="NC2" x="4.45" y="2.98" dx="2" dy="2.5" layer="1"/>
+<hole x="-2.2" y="5.85" drill="1"/>
+<hole x="2.2" y="5.85" drill="1"/>
+<smd name="3/D+" x="0" y="8.555" dx="0.5" dy="2.25" layer="1" stop="no"/>
+<smd name="4/ID" x="0.8" y="8.555" dx="0.5" dy="2.25" layer="1" stop="no"/>
+<smd name="5/GND" x="1.6" y="8.555" dx="0.5" dy="2.25" layer="1" stop="no"/>
+<smd name="2/D-" x="-0.8" y="8.555" dx="0.5" dy="2.25" layer="1" stop="no"/>
+<smd name="1/VBUS" x="-1.6" y="8.555" dx="0.5" dy="2.25" layer="1" stop="no"/>
+<rectangle x1="-1.85" y1="7.43" x2="-1.35" y2="9.68" layer="29"/>
+<rectangle x1="-1.05" y1="7.43" x2="-0.55" y2="9.68" layer="29"/>
+<rectangle x1="-0.25" y1="7.43" x2="0.25" y2="9.68" layer="29"/>
+<rectangle x1="0.55" y1="7.43" x2="1.05" y2="9.68" layer="29"/>
+<rectangle x1="1.35" y1="7.43" x2="1.85" y2="9.68" layer="29"/>
+<wire x1="-3.85" y1="9.32" x2="3.85" y2="9.32" width="0.08" layer="51"/>
+<wire x1="-3.85" y1="0" x2="3.85" y2="0" width="0.08" layer="51"/>
+<wire x1="-3.85" y1="0" x2="-3.85" y2="9.32" width="0.08" layer="51"/>
+<wire x1="3.85" y1="9.32" x2="3.85" y2="0" width="0.08" layer="51"/>
+<rectangle x1="-4.94" y1="7.66" x2="-3.85" y2="9.21" layer="51"/>
+<rectangle x1="-4.95" y1="2.19" x2="-3.84" y2="3.75" layer="51"/>
+<rectangle x1="3.85" y1="2.21" x2="4.96" y2="3.76" layer="51"/>
+<rectangle x1="3.85" y1="7.65" x2="4.96" y2="9.2" layer="51"/>
+<circle x="-1.6" y="10.2" radius="0.18" width="0.1" layer="21"/>
+<text x="7" y="2" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-2.5" y="2" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="0.5" size="0.4064" layer="51" font="vector">edge of PCB</text>
+<polygon width="0.03" layer="51">
+<vertex x="-2.4" y="0.9"/>
+<vertex x="-2.4" y="0.5"/>
+<vertex x="-2.3" y="0.7"/>
+<vertex x="-2.5" y="0.7"/>
+<vertex x="-2.4" y="0.5"/>
+</polygon>
+<polygon width="0.03" layer="51">
+<vertex x="2.3" y="0.9"/>
+<vertex x="2.3" y="0.5"/>
+<vertex x="2.4" y="0.7"/>
+<vertex x="2.2" y="0.7"/>
+<vertex x="2.3" y="0.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="1X04">
@@ -1657,6 +1702,18 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-USB-MINI-B" package="FCI-10033526-XXX1X">
+<connects>
+<connect gate="G$1" pin="1" pad="1/VBUS"/>
+<connect gate="G$1" pin="2" pad="2/D-"/>
+<connect gate="G$1" pin="3" pad="3/D+"/>
+<connect gate="G$1" pin="4" pad="4/ID"/>
+<connect gate="G$1" pin="5" pad="5/GND"/>
 </connects>
 <technologies>
 <technology name=""/>
