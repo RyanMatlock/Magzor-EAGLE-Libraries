@@ -3248,7 +3248,7 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 </device>
 </devices>
 </deviceset>
-<deviceset name="1X11" uservalue="yes">
+<deviceset name="1X11" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="1X11" x="0" y="0"/>
 </gates>
