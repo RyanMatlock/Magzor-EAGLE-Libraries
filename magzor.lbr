@@ -15759,8 +15759,9 @@ TI TXB0108</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ISO1541" prefix="U">
-<description>low-power bidirectional I2C isolator</description>
+<deviceset name="ISO1540" prefix="U">
+<description>&lt;p&gt;low-power bidirectional I2C isolator&lt;/p&gt;
+&lt;p&gt;Note that the ISO1540 has a bidirectional clock, whereas the clock is on side #1 on the ISO1541&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ISOLATOR-BIDIRECTIONAL-I2C-TI-ISO1541" x="0" y="0"/>
 </gates>
