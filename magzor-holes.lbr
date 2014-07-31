@@ -28,8 +28,8 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -48,8 +48,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="11" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -70,6 +70,7 @@
 <layer number="106" name="Function" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Pin" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="Mounting_Hole_Grid" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="Stencil" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -4031,6 +4032,38 @@
 <circle x="0" y="0" radius="1.5875" width="3.175" layer="42"/>
 <circle x="0" y="0" radius="1.5875" width="3.175" layer="43"/>
 </package>
+<package name="STENCIL-ALIGNMENT">
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="1.5875" width="3.175" layer="31"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
+<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
+<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
+<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
+<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
+<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="109"/>
+<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
+<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
+<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
+<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
+<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
+<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
+<text x="0" y="0.635" size="1.27" layer="109">PCB edge</text>
+<circle x="0" y="25.4" radius="1.5875" width="3.175" layer="32"/>
+<circle x="50.8" y="25.4" radius="1.5875" width="3.175" layer="31"/>
+<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<circle x="50.8" y="25.4" radius="1.5875" width="3.175" layer="32"/>
+<circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="31"/>
+<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
+<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HOLE">
@@ -4068,6 +4101,17 @@
 <wire x1="3.175" y1="-1.905" x2="1.905" y2="-3.175" width="0.1524" layer="94"/>
 <wire x1="1.905" y1="0.635" x2="3.175" y2="-0.635" width="0.1524" layer="94"/>
 <wire x1="3.175" y1="0.635" x2="1.905" y2="-0.635" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="SMD-STENCIL-HOLES">
+<wire x1="-5.08" y1="0" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="6.35" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="-2.54" y="6.35" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="-5.08" y="6.35" radius="0.359209375" width="0.254" layer="94"/>
+<text x="0.762" y="0" size="1.778" layer="95">SMD stencil
+holes</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4121,7 +4165,26 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="STENCIL-HOLES">
+<description>Use these for any board with surface mounted components so that a suitable stencil can be generated.</description>
+<gates>
+<gate name="G$1" symbol="SMD-STENCIL-HOLES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STENCIL-ALIGNMENT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
