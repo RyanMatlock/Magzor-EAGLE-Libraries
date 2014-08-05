@@ -11,4 +11,4 @@
 *.scr
 
 # old stuff we no longer need to track but don't want to delete just yet
-./ignore
+ignore/
