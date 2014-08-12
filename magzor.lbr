@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="11" fill="8" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="11" fill="8" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -172,13 +172,9 @@ FCI p/n: 87520</description>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.1854" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="0.6604" x2="-0.6576" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1854" width="0.1524" layer="21"/>
-<wire x1="0.6326" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1" stop="no"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1" stop="no"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1" stop="no"/>
 <text x="-1.778" y="2.032" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.778" y="-3.302" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
@@ -188,6 +184,15 @@ FCI p/n: 87520</description>
 <wire x1="1.651" y1="2.032" x2="1.651" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="1.651" y1="-2.032" x2="-1.651" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="-1.651" y1="-2.032" x2="-1.651" y2="2.032" width="0.127" layer="39"/>
+<circle x="-2.54" y="-1.1" radius="0.254" width="0.127" layer="21"/>
+<rectangle x1="-1.45" y1="-1.8" x2="-0.45" y2="-0.4" layer="29"/>
+<rectangle x1="0.45" y1="-1.8" x2="1.45" y2="-0.4" layer="29"/>
+<rectangle x1="-0.5" y1="0.4" x2="0.5" y2="1.8" layer="29"/>
+<wire x1="-0.8" y1="0.8" x2="-1.55" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="0.8" x2="-1.55" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="0.65" y1="0.8" x2="1.55" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.55" y1="0.8" x2="1.55" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-0.8" x2="-0.25" y2="-0.8" width="0.127" layer="21"/>
 </package>
 <package name="ATMEGA328-DIP28-SOCKET">
 <wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-3.81" width="0.127" layer="27"/>
@@ -14906,46 +14911,46 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <text x="5.08" y="2.286" size="1.27" layer="94" rot="R90">OFF</text>
 </symbol>
 <symbol name="DARLINGTON-NPN">
-<wire x1="5.08" y1="2.54" x2="2.032" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.424" y1="-1.424" x2="2.286" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.921" y1="-2.54" x2="2.286" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.916" y1="-2.186" x2="1.424" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-2.54" x2="0.916" y2="-2.186" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="2.54" x2="0.508" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="3.683" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="3.964" y2="-4.699" width="0.1524" layer="94"/>
-<wire x1="4.572" y1="-4.064" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="3.964" y1="-4.699" x2="4.572" y2="-4.064" width="0.1524" layer="94"/>
-<wire x1="1.186" y1="-1.84" x2="0.208" y2="-1.197" width="0.1524" layer="94"/>
-<wire x1="4.28" y1="-4.38" x2="3.483" y2="-3.61" width="0.1524" layer="94"/>
-<wire x1="2.159" y1="-2.413" x2="1.397" y2="-1.524" width="0.127" layer="94"/>
-<wire x1="1.397" y1="-1.524" x2="1.016" y2="-2.159" width="0.127" layer="94"/>
-<wire x1="1.016" y1="-2.159" x2="2.032" y2="-2.413" width="0.127" layer="94"/>
-<wire x1="2.032" y1="-2.413" x2="1.397" y2="-1.651" width="0.127" layer="94"/>
-<wire x1="1.397" y1="-1.651" x2="1.143" y2="-2.032" width="0.127" layer="94"/>
-<wire x1="1.143" y1="-2.032" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.397" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.397" y1="-1.778" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="4.953" y1="-4.953" x2="4.572" y2="-4.191" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-4.191" x2="4.064" y2="-4.699" width="0.127" layer="94"/>
-<wire x1="4.064" y1="-4.699" x2="4.826" y2="-4.953" width="0.127" layer="94"/>
-<wire x1="4.826" y1="-4.953" x2="4.572" y2="-4.318" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-4.318" x2="4.191" y2="-4.699" width="0.254" layer="94"/>
-<wire x1="4.191" y1="-4.699" x2="4.699" y2="-4.826" width="0.254" layer="94"/>
-<wire x1="4.699" y1="-4.826" x2="4.572" y2="-4.572" width="0.254" layer="94"/>
-<wire x1="4.572" y1="-4.572" x2="4.445" y2="-4.572" width="0.254" layer="94"/>
-<circle x="5.08" y="2.54" radius="0.3048" width="0" layer="94"/>
-<text x="6.35" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="6.35" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<rectangle x1="2.921" y1="-5.08" x2="3.683" y2="0" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="pad" length="point"/>
-<pin name="E" x="5.08" y="-7.62" visible="pad" length="point"/>
-<pin name="C" x="5.08" y="5.08" visible="pad" length="point"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-0.508" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.116" y1="-1.424" x2="-0.254" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-2.54" x2="-0.254" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.624" y1="-2.186" x2="-1.116" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-2.54" x2="-1.624" y2="-2.186" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="2.54" x2="-2.032" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.143" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.424" y2="-4.699" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-4.064" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.424" y1="-4.699" x2="2.032" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="-1.354" y1="-1.84" x2="-2.332" y2="-1.197" width="0.1524" layer="94"/>
+<wire x1="1.74" y1="-4.38" x2="0.943" y2="-3.61" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-2.413" x2="-1.143" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="-1.143" y1="-1.524" x2="-1.524" y2="-2.159" width="0.127" layer="94"/>
+<wire x1="-1.524" y1="-2.159" x2="-0.508" y2="-2.413" width="0.127" layer="94"/>
+<wire x1="-0.508" y1="-2.413" x2="-1.143" y2="-1.651" width="0.127" layer="94"/>
+<wire x1="-1.143" y1="-1.651" x2="-1.397" y2="-2.032" width="0.127" layer="94"/>
+<wire x1="-1.397" y1="-2.032" x2="-0.635" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-2.286" x2="-1.143" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="-1.778" x2="-1.143" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="2.413" y1="-4.953" x2="2.032" y2="-4.191" width="0.127" layer="94"/>
+<wire x1="2.032" y1="-4.191" x2="1.524" y2="-4.699" width="0.127" layer="94"/>
+<wire x1="1.524" y1="-4.699" x2="2.286" y2="-4.953" width="0.127" layer="94"/>
+<wire x1="2.286" y1="-4.953" x2="2.032" y2="-4.318" width="0.127" layer="94"/>
+<wire x1="2.032" y1="-4.318" x2="1.651" y2="-4.699" width="0.254" layer="94"/>
+<wire x1="1.651" y1="-4.699" x2="2.159" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="2.159" y1="-4.826" x2="2.032" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-4.572" x2="1.905" y2="-4.572" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3048" width="0" layer="94"/>
+<text x="3.81" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="2.54" layer="94"/>
+<rectangle x1="0.381" y1="-5.08" x2="1.143" y2="0" layer="94"/>
+<pin name="B" x="-5.08" y="0" visible="pad" length="point"/>
+<pin name="E" x="2.54" y="-7.62" visible="pad" length="point"/>
+<pin name="C" x="2.54" y="5.08" visible="pad" length="point"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="SWITCH-DPDT-ON-OFF">
 <text x="-8.89" y="2.54" size="1.27" layer="94" rot="R90">ON</text>
@@ -17618,6 +17623,24 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="GND" pad="3 6(TAB)"/>
 <connect gate="G$1" pin="IN" pad="2"/>
 <connect gate="G$1" pin="OUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BCV27" prefix="Q">
+<description>Fairchild BCV27 NPN Darlington transistor SOT-23</description>
+<gates>
+<gate name="G$1" symbol="DARLINGTON-NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
