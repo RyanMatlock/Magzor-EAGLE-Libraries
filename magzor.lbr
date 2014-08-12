@@ -17068,7 +17068,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="NJM2396" prefix="IC" uservalue="yes">
+<deviceset name="NJM2396" prefix="U" uservalue="yes">
 <description>EN should be high or open circuit to enable the chip, pulling to ground turns it off</description>
 <gates>
 <gate name="G$1" symbol="4-TERM-FIXED-REGULATOR" x="0" y="2.54"/>
@@ -17605,8 +17605,8 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="NCV59151">
-<description>ON Semiconductor NCV59151DS50R4G = 5V, 1.8A fixed regulator</description>
+<deviceset name="NCP59151" prefix="U">
+<description>ON Semiconductor NCP59151DS50R4G = 5V, 1.8A fixed regulator</description>
 <gates>
 <gate name="G$1" symbol="5-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
