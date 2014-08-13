@@ -89,6 +89,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
+<description>Magzor holes library -- also contains parts for stencils and standard mounting hole grid</description>
 <packages>
 <package name="1/8&quot;-HOLE,3/16&quot;-HEAD">
 <description>0.125"/+0.1",-0.0" hole with 3/16" head</description>
