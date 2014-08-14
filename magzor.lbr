@@ -923,9 +923,9 @@ end</text>
 </package>
 <package name="TO252">
 <description>alternate names: SOT428, DPAK</description>
-<smd name="4" x="-3.41" y="0" dx="5.8" dy="6.2" layer="1"/>
-<smd name="3" x="3.77" y="2.29" dx="3" dy="1.6" layer="1"/>
-<smd name="1" x="3.77" y="-2.29" dx="3" dy="1.6" layer="1"/>
+<smd name="4(TAB)" x="-3.41" y="0" dx="5.8" dy="6.2" layer="1" stop="no"/>
+<smd name="3" x="3.77" y="2.29" dx="3" dy="1.6" layer="1" stop="no"/>
+<smd name="1" x="3.77" y="-2.29" dx="3" dy="1.6" layer="1" stop="no"/>
 <wire x1="1.75" y1="3.25" x2="1.75" y2="2.75" width="0.127" layer="51"/>
 <wire x1="1.75" y1="2.75" x2="1.75" y2="1.75" width="0.127" layer="51"/>
 <wire x1="1.75" y1="1.75" x2="1.75" y2="0.5" width="0.127" layer="51"/>
@@ -979,11 +979,16 @@ end</text>
 </polygon>
 <text x="-6.25" y="3.75" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-6.25" y="-5" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<text x="5.5" y="-2.75" size="0.8128" layer="51" font="vector">1</text>
-<text x="3.5" y="-0.5" size="0.8128" layer="51" font="vector">2</text>
-<text x="5.5" y="1.75" size="0.8128" layer="51" font="vector">3</text>
-<text x="-3" y="-0.5" size="0.8128" layer="51" font="vector">4</text>
 <circle x="3.77" y="-3.875" radius="0.353553125" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="3.4" x2="1.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-3.4" x2="1.8" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-6.6" y1="3.7" x2="5.6" y2="3.7" width="0.127" layer="39"/>
+<wire x1="5.6" y1="3.7" x2="5.6" y2="-3.7" width="0.127" layer="39"/>
+<wire x1="5.6" y1="-3.7" x2="-6.6" y2="-3.7" width="0.127" layer="39"/>
+<wire x1="-6.6" y1="-3.7" x2="-6.6" y2="3.7" width="0.127" layer="39"/>
+<rectangle x1="2.27" y1="1.49" x2="5.27" y2="3.09" layer="29"/>
+<rectangle x1="2.27" y1="-3.09" x2="5.27" y2="-1.49" layer="29"/>
+<rectangle x1="-6.31" y1="-3.1" x2="-0.51" y2="3.1" layer="29"/>
 </package>
 <package name="TAB-0.4-SQ">
 <description>solder tab
@@ -15395,7 +15400,7 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <devices>
 <device name="-ON-SEMI-NTD14NO3R" package="TO252">
 <connects>
-<connect gate="G$1" pin="D" pad="4"/>
+<connect gate="G$1" pin="D" pad="4(TAB)"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
@@ -17653,6 +17658,24 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TL720M" prefix="U">
+<description>TI TL720M50 5V LDO regulator Vin (max): 45V, Vout (nom): 5V, I (max): 450mA, VDO (@ Imax): 300mV</description>
+<gates>
+<gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="*KVU" package="TO252">
+<connects>
+<connect gate="G$1" pin="GND" pad="4(TAB)"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
