@@ -385,7 +385,7 @@ based on Vishay recommendation</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-POL" uservalue="yes">
+<deviceset name="C-POL" prefix="C" uservalue="yes">
 <description>Polarized (e.g. electrolytic, tantalum) capacitor, US symbol</description>
 <gates>
 <gate name="G$1" symbol="C-POL-US" x="0" y="0"/>
