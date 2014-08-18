@@ -17871,7 +17871,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </device>
 </devices>
 </deviceset>
-<deviceset name="MPS430G2XX3" prefix="U">
+<deviceset name="MSP430G2XX3" prefix="U">
 <description>TI MSP430G2XX3 mixed signal microcontroller</description>
 <gates>
 <gate name="G$1" symbol="MSP430G2XX3" x="0" y="0"/>
