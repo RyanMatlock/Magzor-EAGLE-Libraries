@@ -17833,8 +17833,8 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <connect gate="G$1" pin="2" pad="MCU_TEST"/>
 <connect gate="G$1" pin="3" pad="MCU_RST"/>
 <connect gate="G$1" pin="4" pad="GND"/>
-<connect gate="G$1" pin="5" pad="RJ45_RST"/>
-<connect gate="G$1" pin="6" pad="RJ45_TEST"/>
+<connect gate="G$1" pin="5" pad="RJ45_TEST"/>
+<connect gate="G$1" pin="6" pad="RJ45_RST"/>
 </connects>
 <technologies>
 <technology name=""/>
