@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2443,14 +2443,14 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <pad name="NC2" x="6.57" y="10.28" drill="2.38"/>
 <pad name="NC3" x="6.57" y="15.96" drill="2.38"/>
 <pad name="NC4" x="-6.57" y="15.96" drill="2.38"/>
-<pad name="A1" x="-3.5" y="12.99" drill="1" shape="square"/>
-<pad name="A2" x="-1" y="12.99" drill="1" shape="octagon"/>
-<pad name="A3" x="1" y="12.99" drill="1" shape="octagon"/>
-<pad name="A4" x="3.5" y="12.99" drill="1" shape="octagon"/>
-<pad name="B1" x="-3.5" y="15.61" drill="1" shape="octagon"/>
-<pad name="B2" x="-1" y="15.61" drill="1" shape="octagon"/>
-<pad name="B3" x="1" y="15.61" drill="1" shape="octagon"/>
-<pad name="B4" x="3.5" y="15.61" drill="1" shape="octagon"/>
+<pad name="A1/VBUS" x="-3.5" y="12.99" drill="1" shape="square"/>
+<pad name="A2/D-" x="-1" y="12.99" drill="1" shape="octagon"/>
+<pad name="A3/D+" x="1" y="12.99" drill="1" shape="octagon"/>
+<pad name="A4/GND" x="3.5" y="12.99" drill="1" shape="octagon"/>
+<pad name="B1/VBUS" x="-3.5" y="15.61" drill="1" shape="octagon"/>
+<pad name="B2/D-" x="-1" y="15.61" drill="1" shape="octagon"/>
+<pad name="B3/D+" x="1" y="15.61" drill="1" shape="octagon"/>
+<pad name="B4/GND" x="3.5" y="15.61" drill="1" shape="octagon"/>
 <wire x1="-6.65" y1="0" x2="6.65" y2="0" width="0.127" layer="51"/>
 <wire x1="-6.65" y1="0" x2="-6.65" y2="17.3" width="0.127" layer="51"/>
 <wire x1="-6.65" y1="17.3" x2="6.65" y2="17.3" width="0.127" layer="51"/>
@@ -3438,14 +3438,14 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <devices>
 <device name="-67298-3090" package="MOLEX-67298-3090">
 <connects>
-<connect gate="A" pin="1" pad="A1"/>
-<connect gate="A" pin="2" pad="A2"/>
-<connect gate="A" pin="3" pad="A3"/>
-<connect gate="A" pin="4" pad="A4"/>
-<connect gate="B" pin="1" pad="B1"/>
-<connect gate="B" pin="2" pad="B2"/>
-<connect gate="B" pin="3" pad="B3"/>
-<connect gate="B" pin="4" pad="B4"/>
+<connect gate="A" pin="1" pad="A1/VBUS"/>
+<connect gate="A" pin="2" pad="A2/D-"/>
+<connect gate="A" pin="3" pad="A3/D+"/>
+<connect gate="A" pin="4" pad="A4/GND"/>
+<connect gate="B" pin="1" pad="B1/VBUS"/>
+<connect gate="B" pin="2" pad="B2/D-"/>
+<connect gate="B" pin="3" pad="B3/D+"/>
+<connect gate="B" pin="4" pad="B4/GND"/>
 </connects>
 <technologies>
 <technology name=""/>
