@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3800,24 +3800,24 @@
 <rectangle x1="2.746375" y1="6.302375" x2="2.809875" y2="6.334125" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-SM">
-<wire x1="0" y1="0" x2="63.5" y2="0" width="0.254" layer="94"/>
-<wire x1="63.5" y1="0" x2="63.5" y2="27.94" width="0.254" layer="94"/>
-<wire x1="63.5" y1="27.94" x2="63.5" y2="33.02" width="0.254" layer="94"/>
-<wire x1="63.5" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="55.88" y2="0" width="0.254" layer="94"/>
+<wire x1="55.88" y1="0" x2="55.88" y2="27.94" width="0.254" layer="94"/>
+<wire x1="55.88" y1="27.94" x2="55.88" y2="33.02" width="0.254" layer="94"/>
+<wire x1="55.88" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
 <wire x1="0" y1="33.02" x2="0" y2="27.94" width="0.254" layer="94"/>
-<text x="18.415" y="29.21" size="2.54" layer="94" font="vector">Manufacturing</text>
+<text x="13.335" y="29.21" size="2.54" layer="94" font="vector">Manufacturing</text>
 <wire x1="0" y1="27.94" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="27.94" x2="63.5" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="27.94" x2="55.88" y2="27.94" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-MED">
-<wire x1="0" y1="0" x2="68.58" y2="0" width="0.254" layer="94"/>
-<wire x1="68.58" y1="0" x2="68.58" y2="40.64" width="0.254" layer="94"/>
-<wire x1="68.58" y1="40.64" x2="68.58" y2="45.72" width="0.254" layer="94"/>
-<wire x1="68.58" y1="45.72" x2="0" y2="45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="55.88" y2="0" width="0.254" layer="94"/>
+<wire x1="55.88" y1="0" x2="55.88" y2="40.64" width="0.254" layer="94"/>
+<wire x1="55.88" y1="40.64" x2="55.88" y2="45.72" width="0.254" layer="94"/>
+<wire x1="55.88" y1="45.72" x2="0" y2="45.72" width="0.254" layer="94"/>
 <wire x1="0" y1="45.72" x2="0" y2="40.64" width="0.254" layer="94"/>
-<text x="20.955" y="41.91" size="2.54" layer="94" font="vector">Manufacturing</text>
+<text x="13.335" y="41.91" size="2.54" layer="94" font="vector">Manufacturing</text>
 <wire x1="0" y1="40.64" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="40.64" x2="68.58" y2="40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="40.64" x2="55.88" y2="40.64" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-LRG">
 <wire x1="0" y1="0" x2="76.2" y2="0" width="0.254" layer="94"/>
@@ -3828,6 +3828,16 @@
 <text x="23.495" y="54.61" size="2.54" layer="94" font="vector">Manufacturing</text>
 <wire x1="0" y1="53.34" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="53.34" x2="76.2" y2="53.34" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MANUFACTURING-XLG">
+<wire x1="0" y1="60.96" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="66.04" x2="0" y2="60.96" width="0.254" layer="94"/>
+<text x="41.275" y="62.23" size="2.54" layer="94" font="vector">Manufacturing</text>
+<wire x1="0" y1="0" x2="111.76" y2="0" width="0.254" layer="94"/>
+<wire x1="111.76" y1="0" x2="111.76" y2="60.96" width="0.254" layer="94"/>
+<wire x1="111.76" y1="60.96" x2="111.76" y2="66.04" width="0.254" layer="94"/>
+<wire x1="111.76" y1="66.04" x2="0" y2="66.04" width="0.254" layer="94"/>
+<wire x1="0" y1="60.96" x2="111.76" y2="60.96" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3871,7 +3881,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MANUFACTURING-SMALL">
+<deviceset name="MANUFACTURING-SM">
 <gates>
 <gate name="G$1" symbol="MANUFACTURING-SM" x="0" y="0"/>
 </gates>
@@ -3898,6 +3908,18 @@
 <deviceset name="MANUFACTURING-LRG">
 <gates>
 <gate name="G$1" symbol="MANUFACTURING-LRG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MANUFACTURING-XLG">
+<gates>
+<gate name="G$1" symbol="MANUFACTURING-XLG" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
