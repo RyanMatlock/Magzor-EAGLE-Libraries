@@ -4330,7 +4330,7 @@ holes</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STENCIL-HOLES+GRID" prefix="FD" uservalue="yes">
+<deviceset name="STENCIL-HOLES+GRID" prefix="FD">
 <gates>
 <gate name="G$1" symbol="SMD-STENCIL-HOLES+GRID" x="0" y="0"/>
 </gates>
