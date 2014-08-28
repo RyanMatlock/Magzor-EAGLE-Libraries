@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6454,7 +6454,7 @@ OSH Park DRC complains about this</description>
 <text x="-3.048" y="-3.81" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <text x="-3.048" y="2.794" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="HEADER-1X03-SERVO">
+<package name="HEADER-1X03-SERVO_">
 <description>single servo header</description>
 <wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
@@ -7762,12 +7762,12 @@ Panasonic EXBS8V
 </package>
 <package name="HEADER-2X03-DUAL-SERVO">
 <circle x="-2.54" y="-3.048" radius="0.254" width="0.127" layer="22"/>
-<pad name="0GND" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="0VCC" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="0SIG" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="1GND" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="1VCC" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="1SIG" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="A.GND" x="-2.54" y="-1.27" drill="0.8128" diameter="1.778" shape="square"/>
+<pad name="A.VCC" x="0" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="A.SIG" x="2.54" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.GND" x="-2.54" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.VCC" x="0" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.SIG" x="2.54" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
 <text x="5.08" y="-3.4925" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <text x="-6.604" y="-3.4925" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
@@ -7794,14 +7794,16 @@ Panasonic EXBS8V
 <text x="-3.302" y="2.8575" size="0.635" layer="21" font="vector">GND</text>
 <text x="-0.762" y="2.8575" size="0.635" layer="21" font="vector">VCC</text>
 <text x="1.778" y="2.8575" size="0.635" layer="21" font="vector">SIG</text>
-<text x="-5.969" y="-1.778" size="1.016" layer="21" font="vector">+0</text>
-<text x="-5.969" y="0.762" size="1.016" layer="21" font="vector">+1</text>
+<text x="-5.969" y="-1.778" size="1.016" layer="21" font="vector">#</text>
+<text x="-5.969" y="0.762" size="1.016" layer="21" font="vector">#</text>
 <wire x1="-3.81" y1="0" x2="-6.35" y2="0" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="2.54" x2="-6.35" y2="0" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="0" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<text x="-5.0165" y="-1.778" size="1.016" layer="21" font="vector">&gt;A</text>
+<text x="-5.0165" y="0.762" size="1.016" layer="21" font="vector">&gt;B</text>
 </package>
 <package name="QFN20">
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.0762" layer="51"/>
@@ -11290,6 +11292,40 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="-1.27" y1="-3.65125" x2="-1.27" y2="-3.96875" width="0.1016" layer="21"/>
 <wire x1="-1.27" y1="-3.96875" x2="1.27" y2="-3.96875" width="0.1016" layer="21"/>
 <wire x1="1.27" y1="-3.96875" x2="1.27" y2="-3.65125" width="0.1016" layer="21"/>
+</package>
+<package name="HEADER-1X03-SERVO">
+<circle x="-2.54" y="-1.778" radius="0.254" width="0.127" layer="22"/>
+<pad name="GND" x="-2.54" y="0" drill="0.8128" diameter="1.778" shape="square"/>
+<pad name="VCC" x="0" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="SIG" x="2.54" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
+<text x="5.08" y="-2.2225" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-6.604" y="-2.2225" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<text x="-3.302" y="-2.2225" size="0.635" layer="21" font="vector">GND</text>
+<text x="-0.762" y="-2.2225" size="0.635" layer="21" font="vector">VCC</text>
+<text x="1.778" y="-2.2225" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-5.969" y="-0.508" size="1.016" layer="21" font="vector">#</text>
+<wire x1="-3.81" y1="1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<text x="-5.0165" y="-0.508" size="1.016" layer="21" font="vector">&gt;NUM</text>
+<wire x1="-3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -16051,11 +16087,12 @@ A# =&gt; analogRead()</text>
 </devices>
 </deviceset>
 <deviceset name="HEADER-1X03" prefix="J" uservalue="yes">
+<description>Make sure to set the &gt;NUM attribute for the -SERVO variant</description>
 <gates>
 <gate name="G$1" symbol="HEADER-1X03" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SERVO" package="HEADER-1X03-SERVO">
+<device name="-SERVO_" package="HEADER-1X03-SERVO_">
 <connects>
 <connect gate="G$1" pin="1" pad="GND"/>
 <connect gate="G$1" pin="2" pad="VCC"/>
@@ -16070,6 +16107,16 @@ A# =&gt; analogRead()</text>
 <connect gate="G$1" pin="1" pad="5V-I2C"/>
 <connect gate="G$1" pin="2" pad="I2C-IN"/>
 <connect gate="G$1" pin="3" pad="3V3-I2C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SERVO" package="HEADER-1X03-SERVO">
+<connects>
+<connect gate="G$1" pin="1" pad="VCC"/>
+<connect gate="G$1" pin="2" pad="SIG"/>
+<connect gate="G$1" pin="3" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16663,6 +16710,7 @@ A# =&gt; analogRead()</text>
 </devices>
 </deviceset>
 <deviceset name="HEADER-2X03-DUAL-SERVO" prefix="J" uservalue="yes">
+<description>set the &gt;A and &gt;B attributes to set the servo numbers</description>
 <gates>
 <gate name="A" symbol="HEADER-1X03" x="-7.62" y="0"/>
 <gate name="B" symbol="HEADER-1X03" x="7.62" y="0"/>
@@ -16670,12 +16718,12 @@ A# =&gt; analogRead()</text>
 <devices>
 <device name="" package="HEADER-2X03-DUAL-SERVO">
 <connects>
-<connect gate="A" pin="1" pad="0VCC"/>
-<connect gate="A" pin="2" pad="0SIG"/>
-<connect gate="A" pin="3" pad="0GND"/>
-<connect gate="B" pin="1" pad="1VCC"/>
-<connect gate="B" pin="2" pad="1SIG"/>
-<connect gate="B" pin="3" pad="1GND"/>
+<connect gate="A" pin="1" pad="A.VCC"/>
+<connect gate="A" pin="2" pad="A.SIG"/>
+<connect gate="A" pin="3" pad="A.GND"/>
+<connect gate="B" pin="1" pad="B.VCC"/>
+<connect gate="B" pin="2" pad="B.SIG"/>
+<connect gate="B" pin="3" pad="B.GND"/>
 </connects>
 <technologies>
 <technology name=""/>
