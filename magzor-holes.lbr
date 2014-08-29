@@ -2312,7 +2312,7 @@
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
 <text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="32"/>
@@ -2320,7 +2320,8 @@
 <wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
 <wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
 <text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4&quot;-GRID-6&quot;X4&quot;">
 <wire x1="5.08" y1="-106.68" x2="7.62" y2="-109.22" width="0.127" layer="108"/>
@@ -3225,7 +3226,7 @@
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
 <text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="32"/>
@@ -3233,7 +3234,8 @@
 <wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
 <wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
 <text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4&quot;-GRID-4&quot;X3&quot;">
 <wire x1="5.08" y1="-81.28" x2="7.62" y2="-83.82" width="0.127" layer="108"/>
@@ -3730,7 +3732,7 @@
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
 <text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="32"/>
@@ -3738,7 +3740,8 @@
 <wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
 <wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
 <text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4&quot;-GRID-3&quot;X2&quot;">
 <wire x1="5.08" y1="-55.88" x2="7.62" y2="-58.42" width="0.127" layer="108"/>
@@ -4027,7 +4030,7 @@
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
 <text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="1.5875" width="3.175" layer="32"/>
@@ -4035,7 +4038,8 @@
 <wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
 <wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
 <text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4&quot;-GRID-1.5&quot;X1&quot;">
 <wire x1="5.08" y1="-30.48" x2="7.62" y2="-33.02" width="0.127" layer="108"/>
@@ -4160,8 +4164,9 @@
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="1.5875" width="3.175" layer="32"/>
 <text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="0" x2="31.75" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="-31.75" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 </package>
 <package name="7/64&quot;-HOLE,1/4&quot;-HEAD">
 <description>Standard Magzor mounting hole, compatible with 4-40 screws</description>
