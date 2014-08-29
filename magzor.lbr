@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -11244,6 +11244,20 @@ P/N: B2P-VH-FB-B</description>
 <pad name="SIG" x="2.54" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
 <text x="5.08" y="-2.2225" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <text x="-6.604" y="-2.2225" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="-3.302" y="-2.2225" size="0.635" layer="21" font="vector">GND</text>
+<text x="-0.762" y="-2.2225" size="0.635" layer="21" font="vector">VCC</text>
+<text x="1.778" y="-2.2225" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-5.969" y="-0.508" size="1.016" layer="21" font="vector">#</text>
+<text x="-5.0165" y="-0.508" size="1.016" layer="21" font="vector">&gt;NUM</text>
+<wire x1="-3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
@@ -11253,23 +11267,106 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="-1.27" y1="-0.635" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<text x="-3.302" y="-2.2225" size="0.635" layer="21" font="vector">GND</text>
-<text x="-0.762" y="-2.2225" size="0.635" layer="21" font="vector">VCC</text>
-<text x="1.778" y="-2.2225" size="0.635" layer="21" font="vector">SIG</text>
-<text x="-5.969" y="-0.508" size="1.016" layer="21" font="vector">#</text>
 <wire x1="-3.81" y1="1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
-<text x="-5.0165" y="-0.508" size="1.016" layer="21" font="vector">&gt;NUM</text>
-<wire x1="-3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.35" y1="-1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="HEADER-1X03-SERVO-FDBK">
+<circle x="-3.81" y="-1.778" radius="0.254" width="0.127" layer="22"/>
+<pad name="GND" x="-3.81" y="0" drill="0.8128" diameter="1.778" shape="square"/>
+<pad name="VCC" x="-1.27" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="SIG" x="1.27" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
+<text x="6.35" y="-2.2225" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-7.874" y="-2.2225" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<text x="-4.572" y="-2.2225" size="0.635" layer="21" font="vector">GND</text>
+<text x="-2.032" y="-2.2225" size="0.635" layer="21" font="vector">VCC</text>
+<text x="0.508" y="-2.2225" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-7.239" y="-0.508" size="1.016" layer="21" font="vector">#</text>
+<wire x1="-5.08" y1="1.27" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+<text x="-6.2865" y="-0.508" size="1.016" layer="21" font="vector">&gt;NUM</text>
+<wire x1="-5.08" y1="1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<pad name="FDBK" x="3.81" y="0" drill="0.8128" diameter="1.778" shape="octagon"/>
+<text x="2.794" y="-2.2225" size="0.635" layer="21" font="vector">FDBK</text>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.127" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
+</package>
+<package name="HEADER-2X04-DUAL-SERVO-FDBK">
+<circle x="-3.81" y="-3.048" radius="0.254" width="0.127" layer="22"/>
+<pad name="A.GND" x="-3.81" y="-1.27" drill="0.8128" diameter="1.778" shape="square"/>
+<pad name="A.VCC" x="-1.27" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="A.SIG" x="1.27" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.GND" x="-3.81" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.VCC" x="-1.27" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.SIG" x="1.27" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<text x="6.35" y="-3.4925" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-7.874" y="-3.4925" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<text x="-4.572" y="-3.4925" size="0.635" layer="21" font="vector">GND</text>
+<text x="-2.032" y="-3.4925" size="0.635" layer="21" font="vector">VCC</text>
+<text x="0.508" y="-3.4925" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-4.572" y="2.8575" size="0.635" layer="21" font="vector">GND</text>
+<text x="-2.032" y="2.8575" size="0.635" layer="21" font="vector">VCC</text>
+<text x="0.508" y="2.8575" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-7.239" y="-1.778" size="1.016" layer="21" font="vector">#</text>
+<text x="-7.239" y="0.762" size="1.016" layer="21" font="vector">#</text>
+<wire x1="-5.08" y1="0" x2="-7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-2.54" width="0.127" layer="21"/>
+<text x="-6.2865" y="-1.778" size="1.016" layer="21" font="vector">&gt;A</text>
+<text x="-6.2865" y="0.762" size="1.016" layer="21" font="vector">&gt;B</text>
+<pad name="A.FDBK" x="3.81" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<pad name="B.FDBK" x="3.81" y="1.27" drill="0.8128" diameter="1.778" shape="octagon"/>
+<wire x1="2.54" y1="1.905" x2="3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.127" layer="21"/>
+<wire x1="4.445" y1="2.54" x2="5.08" y2="1.905" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="4.445" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<text x="2.794" y="2.8575" size="0.635" layer="21" font="vector">FDBK</text>
+<text x="2.794" y="-3.4925" size="0.635" layer="21" font="vector">FDBK</text>
 </package>
 </packages>
 <symbols>
@@ -16653,28 +16750,6 @@ A# =&gt; analogRead()</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER-2X03-DUAL-SERVO" prefix="J" uservalue="yes">
-<description>set the &gt;A and &gt;B attributes to set the servo numbers</description>
-<gates>
-<gate name="A" symbol="HEADER-1X03" x="-7.62" y="0"/>
-<gate name="B" symbol="HEADER-1X03" x="7.62" y="0"/>
-</gates>
-<devices>
-<device name="" package="HEADER-2X03-DUAL-SERVO">
-<connects>
-<connect gate="A" pin="1" pad="A.VCC"/>
-<connect gate="A" pin="2" pad="A.SIG"/>
-<connect gate="A" pin="3" pad="A.GND"/>
-<connect gate="B" pin="1" pad="B.VCC"/>
-<connect gate="B" pin="2" pad="B.SIG"/>
-<connect gate="B" pin="3" pad="B.GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LDO-REGULATOR-LM1117" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
@@ -17021,7 +17096,7 @@ TI TXB0108</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER-2X03" prefix="J" uservalue="yes">
+<deviceset name="HEADER-2X(1X03)" prefix="J" uservalue="yes">
 <gates>
 <gate name="A" symbol="HEADER-1X03" x="0" y="10.16"/>
 <gate name="B" symbol="HEADER-1X03" x="0" y="-10.16"/>
@@ -17035,6 +17110,19 @@ TI TXB0108</description>
 <connect gate="B" pin="1" pad="+5V-2"/>
 <connect gate="B" pin="2" pad="A7"/>
 <connect gate="B" pin="3" pad="GND2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-DUAL-SERVO" package="HEADER-2X03-DUAL-SERVO">
+<connects>
+<connect gate="A" pin="1" pad="A.VCC"/>
+<connect gate="A" pin="2" pad="A.SIG"/>
+<connect gate="A" pin="3" pad="A.GND"/>
+<connect gate="B" pin="1" pad="B.VCC"/>
+<connect gate="B" pin="2" pad="B.SIG"/>
+<connect gate="B" pin="3" pad="B.GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17961,6 +18049,29 @@ primed version has tripod kinked leads, although they come from the manufacturer
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER-2X(1X04)" prefix="J" uservalue="yes">
+<gates>
+<gate name="A" symbol="HEADER-1X04" x="0" y="12.7"/>
+<gate name="B" symbol="HEADER-1X04" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="-DUAL-SERVO-FDBK" package="HEADER-2X04-DUAL-SERVO-FDBK">
+<connects>
+<connect gate="A" pin="1" pad="A.VCC"/>
+<connect gate="A" pin="2" pad="A.SIG"/>
+<connect gate="A" pin="3" pad="A.FDBK"/>
+<connect gate="A" pin="4" pad="A.GND"/>
+<connect gate="B" pin="1" pad="B.VCC"/>
+<connect gate="B" pin="2" pad="B.SIG"/>
+<connect gate="B" pin="3" pad="B.FDBK"/>
+<connect gate="B" pin="4" pad="B.GND"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
