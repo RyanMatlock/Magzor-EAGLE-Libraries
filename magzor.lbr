@@ -19618,7 +19618,7 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STPIC6*595" prefix="U">
+<deviceset name="STPIC6D595" prefix="U">
 <description>STMicro STPIC6C595, STPIC6D595 8-bit serial to parallel shift register</description>
 <gates>
 <gate name="G$1" symbol="STPIC6C595" x="0" y="0"/>
