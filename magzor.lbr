@@ -11867,6 +11867,67 @@ P/N: B2P-VH-FB-B</description>
 <text x="5.715" y="-3.683" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <text x="-4.699" y="-3.683" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
+<package name="HEADER-4X03-QUAD-SERVO">
+<circle x="-2.54" y="-5.588" radius="0.254" width="0.127" layer="22"/>
+<pad name="A.GND" x="-2.54" y="-3.81" drill="0.9525" diameter="1.778" shape="square"/>
+<pad name="A.VCC" x="0" y="-3.81" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="A.SIG" x="2.54" y="-3.81" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="B.GND" x="-2.54" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="B.VCC" x="0" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="B.SIG" x="2.54" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<text x="5.08" y="-5.08" size="1.016" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="-6.604" y="-5.08" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="3.81" y1="-4.445" x2="3.175" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-5.08" x2="1.905" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.08" x2="1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-4.445" x2="0.635" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-5.08" x2="-0.635" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-5.08" x2="-1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-4.445" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<text x="-3.302" y="-6.0325" size="0.635" layer="21" font="vector">GND</text>
+<text x="-0.762" y="-6.0325" size="0.635" layer="21" font="vector">VCC</text>
+<text x="1.778" y="-6.0325" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-3.302" y="5.3975" size="0.635" layer="21" font="vector">GND</text>
+<text x="-0.762" y="5.3975" size="0.635" layer="21" font="vector">VCC</text>
+<text x="1.778" y="5.3975" size="0.635" layer="21" font="vector">SIG</text>
+<text x="-5.969" y="-4.318" size="1.016" layer="21" font="vector">#</text>
+<text x="-5.969" y="-1.778" size="1.016" layer="21" font="vector">#</text>
+<wire x1="-3.81" y1="-2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-5.08" x2="-6.35" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.54" x2="-6.35" y2="-5.08" width="0.127" layer="21"/>
+<text x="-5.0165" y="-4.318" size="1.016" layer="21" font="vector">&gt;A</text>
+<text x="-5.0165" y="-1.778" size="1.016" layer="21" font="vector">&gt;B</text>
+<pad name="C.GND" x="-2.54" y="1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="C.VCC" x="0" y="1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="C.SIG" x="2.54" y="1.27" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="D.GND" x="-2.54" y="3.81" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="D.VCC" x="0" y="3.81" drill="0.9525" diameter="1.778" shape="octagon"/>
+<pad name="D.SIG" x="2.54" y="3.81" drill="0.9525" diameter="1.778" shape="octagon"/>
+<wire x1="-3.81" y1="5.08" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0" x2="-6.35" y2="0" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
+<text x="-5.969" y="0.762" size="1.016" layer="21" font="vector">#</text>
+<text x="-5.0165" y="0.762" size="1.016" layer="21" font="vector">&gt;C</text>
+<text x="-5.969" y="3.302" size="1.016" layer="21" font="vector">#</text>
+<text x="-5.0165" y="3.302" size="1.016" layer="21" font="vector">&gt;D</text>
+<wire x1="-3.81" y1="5.08" x2="-1.905" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="5.08" x2="-1.27" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="4.445" x2="-0.635" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.127" layer="21"/>
+<wire x1="0.635" y1="5.08" x2="1.27" y2="4.445" width="0.127" layer="21"/>
+<wire x1="1.27" y1="4.445" x2="1.905" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.905" y1="5.08" x2="3.175" y2="5.08" width="0.127" layer="21"/>
+<wire x1="3.175" y1="5.08" x2="3.81" y2="4.445" width="0.127" layer="21"/>
+<wire x1="3.81" y1="4.445" x2="3.81" y2="-4.445" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X04">
@@ -19937,6 +19998,35 @@ don't forget to set the &gt;LABEL attribute</description>
 <connect gate="G$1" pin="B" pad="2"/>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER-4X(1X03)" prefix="J" uservalue="yes">
+<gates>
+<gate name="A" symbol="HEADER-1X03" x="0" y="25.4"/>
+<gate name="B" symbol="HEADER-1X03" x="0" y="7.62"/>
+<gate name="C" symbol="HEADER-1X03" x="0" y="-10.16"/>
+<gate name="D" symbol="HEADER-1X03" x="0" y="-27.94"/>
+</gates>
+<devices>
+<device name="-QUAD-SERVO" package="HEADER-4X03-QUAD-SERVO">
+<connects>
+<connect gate="A" pin="1" pad="A.VCC"/>
+<connect gate="A" pin="2" pad="A.SIG"/>
+<connect gate="A" pin="3" pad="A.GND"/>
+<connect gate="B" pin="1" pad="B.VCC"/>
+<connect gate="B" pin="2" pad="B.SIG"/>
+<connect gate="B" pin="3" pad="B.GND"/>
+<connect gate="C" pin="1" pad="C.VCC"/>
+<connect gate="C" pin="2" pad="C.SIG"/>
+<connect gate="C" pin="3" pad="C.GND"/>
+<connect gate="D" pin="1" pad="D.VCC"/>
+<connect gate="D" pin="2" pad="D.SIG"/>
+<connect gate="D" pin="3" pad="D.GND"/>
 </connects>
 <technologies>
 <technology name=""/>
