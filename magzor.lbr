@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -12373,7 +12373,7 @@ P/N: B2P-VH-FB-B</description>
 </package>
 <package name="HEADER-2X03-MSP-PROG">
 <pad name="MCU.TEST" x="-2.54" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="MCU.RST" x="0" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="MCU.RESET" x="0" y="-1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
 <wire x1="1.27" y1="-1.905" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
@@ -12389,7 +12389,7 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-2.54" x2="-3.81" y2="-1.905" width="0.127" layer="21"/>
 <pad name="RJ45.TEST" x="-2.54" y="1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="RJ45RST" x="0" y="1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="RJ45.RESET" x="0" y="1.27" drill="0.9525" diameter="1.778" shape="octagon" rot="R90"/>
 <wire x1="-3.81" y1="-0.635" x2="-3.175" y2="0" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="0" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="0.635" x2="-3.81" y2="1.905" width="0.127" layer="21"/>
@@ -17790,15 +17790,15 @@ A# =&gt; analogRead()</text>
 <circle x="-1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
 <text x="-5.08" y="5.588" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="MCU.1" x="-7.62" y="2.54" visible="pad" length="short"/>
-<pin name="MCU.2" x="-7.62" y="0" visible="pad" length="short"/>
-<pin name="MCU.3" x="-7.62" y="-2.54" visible="pad" length="short"/>
+<pin name="MCU.TEST" x="-7.62" y="2.54" visible="pad" length="short"/>
+<pin name="MCU.RESET" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="GND" x="-7.62" y="-2.54" visible="pad" length="short"/>
 <wire x1="5.08" y1="2.54" x2="2.286" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="2.286" y2="0" width="0.1524" layer="94"/>
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
-<pin name="RJ45.1" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="RJ45.2" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="RJ45.TEST" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="RJ45.RESET" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
@@ -20817,11 +20817,11 @@ don't forget to set the &gt;LABEL attribute</description>
 <devices>
 <device name="" package="HEADER-2X03-MSP-PROG">
 <connects>
-<connect gate="G$1" pin="MCU.1" pad="MCU.RST"/>
-<connect gate="G$1" pin="MCU.2" pad="MCU.TEST"/>
-<connect gate="G$1" pin="MCU.3" pad="GND"/>
-<connect gate="G$1" pin="RJ45.1" pad="RJ45RST"/>
-<connect gate="G$1" pin="RJ45.2" pad="RJ45.TEST"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MCU.RESET" pad="MCU.RESET"/>
+<connect gate="G$1" pin="MCU.TEST" pad="MCU.TEST"/>
+<connect gate="G$1" pin="RJ45.RESET" pad="RJ45.RESET"/>
+<connect gate="G$1" pin="RJ45.TEST" pad="RJ45.TEST"/>
 </connects>
 <technologies>
 <technology name=""/>
