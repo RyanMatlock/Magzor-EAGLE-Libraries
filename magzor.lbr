@@ -20829,6 +20829,24 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="BC817" prefix="Q" uservalue="yes">
+<description>General purpose NPN BJT, SOT23 (B-E-C)</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
