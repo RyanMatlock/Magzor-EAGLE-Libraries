@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14771,29 +14771,30 @@ Arduino-mapped names in red&lt;br&gt;</description>
 <wire x1="6.35" y1="-7.62" x2="6.35" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="6.35" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="DUAL-H-BRIDGE-DRIVER-TI-DRV8833">
-<pin name="AIN1" x="-17.78" y="2.54" length="middle"/>
-<pin name="AIN2" x="-17.78" y="0" length="middle"/>
-<pin name="BIN1" x="-17.78" y="-5.08" length="middle"/>
-<pin name="BIN2" x="-17.78" y="-7.62" length="middle"/>
-<pin name="NSLEEP" x="-17.78" y="10.16" length="middle"/>
-<pin name="VCP" x="17.78" y="15.24" length="middle" rot="R180"/>
+<symbol name="DRV8833">
+<description>Dual H-bridge motor driver TI DRV8833</description>
+<pin name="AIN1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="AIN2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="BIN1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="BIN2" x="-17.78" y="-12.7" length="middle"/>
+<pin name="NSLEEP" x="-17.78" y="2.54" length="middle"/>
+<pin name="VCP" x="17.78" y="17.78" length="middle" rot="R180"/>
 <pin name="AOUT1" x="17.78" y="10.16" length="middle" rot="R180"/>
 <pin name="AOUT2" x="17.78" y="7.62" length="middle" rot="R180"/>
 <pin name="BOUT1" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="BOUT2" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="NFAULT" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="VINT" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="AISEN" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="BISEN" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="VM" x="-17.78" y="15.24" length="middle"/>
-<pin name="GND" x="-17.78" y="-15.24" length="middle"/>
-<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<text x="-12.7" y="18.542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="NFAULT" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="VINT" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="AISEN" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="BISEN" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="VM" x="-17.78" y="17.78" length="middle"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<text x="-12.7" y="21.082" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="HEADER-2X05-ROW-PARITY">
 <wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
@@ -18290,7 +18291,7 @@ A# =&gt; analogRead()</text>
 <deviceset name="DRV8833" prefix="U">
 <description>Dual H-bridge driver</description>
 <gates>
-<gate name="G$1" symbol="DUAL-H-BRIDGE-DRIVER-TI-DRV8833" x="0" y="0"/>
+<gate name="G$1" symbol="DRV8833" x="0" y="0"/>
 </gates>
 <devices>
 <device name="PWP" package="TSSOP16-PAD">
