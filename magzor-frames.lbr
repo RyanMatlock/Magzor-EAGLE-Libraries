@@ -3800,24 +3800,24 @@
 <rectangle x1="2.746375" y1="6.302375" x2="2.809875" y2="6.334125" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-SM">
-<wire x1="0" y1="0" x2="55.88" y2="0" width="0.254" layer="94"/>
-<wire x1="55.88" y1="0" x2="55.88" y2="27.94" width="0.254" layer="94"/>
-<wire x1="55.88" y1="27.94" x2="55.88" y2="33.02" width="0.254" layer="94"/>
-<wire x1="55.88" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
-<wire x1="0" y1="33.02" x2="0" y2="27.94" width="0.254" layer="94"/>
-<text x="13.335" y="29.21" size="2.54" layer="94" font="vector">Manufacturing</text>
-<wire x1="0" y1="27.94" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="27.94" x2="55.88" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="58.42" y2="0" width="0.254" layer="94"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="30.48" width="0.254" layer="94"/>
+<wire x1="58.42" y1="30.48" x2="58.42" y2="35.56" width="0.254" layer="94"/>
+<wire x1="58.42" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="0" y1="35.56" x2="0" y2="30.48" width="0.254" layer="94"/>
+<text x="13.335" y="31.75" size="2.54" layer="94" font="vector">Manufacturing</text>
+<wire x1="0" y1="30.48" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="58.42" y2="30.48" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-MED">
-<wire x1="0" y1="0" x2="55.88" y2="0" width="0.254" layer="94"/>
-<wire x1="55.88" y1="0" x2="55.88" y2="40.64" width="0.254" layer="94"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="45.72" width="0.254" layer="94"/>
-<wire x1="55.88" y1="45.72" x2="0" y2="45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="58.42" y2="0" width="0.254" layer="94"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="40.64" width="0.254" layer="94"/>
+<wire x1="58.42" y1="40.64" x2="58.42" y2="45.72" width="0.254" layer="94"/>
+<wire x1="58.42" y1="45.72" x2="0" y2="45.72" width="0.254" layer="94"/>
 <wire x1="0" y1="45.72" x2="0" y2="40.64" width="0.254" layer="94"/>
 <text x="13.335" y="41.91" size="2.54" layer="94" font="vector">Manufacturing</text>
 <wire x1="0" y1="40.64" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="40.64" x2="55.88" y2="40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="40.64" x2="58.42" y2="40.64" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MANUFACTURING-LRG">
 <wire x1="0" y1="0" x2="76.2" y2="0" width="0.254" layer="94"/>
