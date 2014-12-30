@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12441,33 +12441,35 @@ P/N: B2P-VH-FB-B</description>
 <wire x1="-3.4925" y1="2.0955" x2="-3.4925" y2="-2.0955" width="0.127" layer="51"/>
 <rectangle x1="-3.2385" y1="-1.8415" x2="0.4445" y2="1.8415" layer="51"/>
 </package>
-<package name="ADAFRUIT_GPS_BREAKOUT">
+<package name="ADAFRUIT-GPS-BREAKOUT-V3">
+<description>Adafruit Product ID: 746</description>
 <wire x1="-2.54" y1="12.7" x2="-2.54" y2="-12.7" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-12.7" x2="31.75" y2="-12.7" width="0.127" layer="21"/>
 <wire x1="31.75" y1="-12.7" x2="31.75" y2="12.7" width="0.127" layer="21"/>
 <wire x1="31.75" y1="12.7" x2="-2.54" y2="12.7" width="0.127" layer="21"/>
 <hole x="29.21" y="10.16" drill="2.54"/>
 <hole x="29.21" y="-10.16" drill="2.54"/>
-<text x="12.7" y="-1.27" size="1.27" layer="27">Adafruit Ultimate 
+<text x="11.43" y="-1.27" size="1.27" layer="27" font="vector">Adafruit Ultimate 
 GPS Breakout v3</text>
-<text x="1.905" y="9.525" size="1.27" layer="21">3.3V</text>
-<text x="1.905" y="6.985" size="1.27" layer="21">EN</text>
-<text x="1.905" y="4.445" size="1.27" layer="21">VBAT</text>
-<text x="1.905" y="1.905" size="1.27" layer="21">FIX</text>
-<text x="1.905" y="-0.635" size="1.27" layer="21">TX</text>
-<text x="1.905" y="-3.175" size="1.27" layer="21">RX</text>
-<text x="1.905" y="-5.715" size="1.27" layer="21">GND</text>
-<text x="1.905" y="-8.255" size="1.27" layer="21">VIN</text>
-<text x="1.905" y="-10.795" size="1.27" layer="21">PPS</text>
-<pad name="P$1" x="0" y="10.16" drill="1.016"/>
-<pad name="P$2" x="0" y="7.62" drill="1.016"/>
-<pad name="P$3" x="0" y="5.08" drill="1.016"/>
-<pad name="P$4" x="0" y="2.54" drill="1.016"/>
-<pad name="P$5" x="0" y="0" drill="1.016"/>
-<pad name="P$6" x="0" y="-2.54" drill="1.016"/>
-<pad name="P$7" x="0" y="-5.08" drill="1.016"/>
-<pad name="P$8" x="0" y="-7.62" drill="1.016"/>
-<pad name="P$9" x="0" y="-10.16" drill="1.016"/>
+<text x="1.905" y="9.525" size="1.27" layer="21" font="vector">3.3V</text>
+<text x="1.905" y="6.985" size="1.27" layer="21" font="vector">EN</text>
+<text x="1.905" y="4.445" size="1.27" layer="21" font="vector">VBAT</text>
+<text x="1.905" y="1.905" size="1.27" layer="21" font="vector">FIX</text>
+<text x="1.905" y="-0.635" size="1.27" layer="21" font="vector">TX</text>
+<text x="1.905" y="-3.175" size="1.27" layer="21" font="vector">RX</text>
+<text x="1.905" y="-5.715" size="1.27" layer="21" font="vector">GND</text>
+<text x="1.905" y="-8.255" size="1.27" layer="21" font="vector">VIN</text>
+<text x="1.905" y="-10.795" size="1.27" layer="21" font="vector">PPS</text>
+<pad name="1" x="0" y="10.16" drill="1.016" shape="square"/>
+<pad name="2" x="0" y="7.62" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="5.08" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="2.54" drill="1.016" shape="octagon"/>
+<pad name="5" x="0" y="0" drill="1.016" shape="octagon"/>
+<pad name="6" x="0" y="-2.54" drill="1.016" shape="octagon"/>
+<pad name="7" x="0" y="-5.08" drill="1.016" shape="octagon"/>
+<pad name="8" x="0" y="-7.62" drill="1.016" shape="octagon"/>
+<pad name="9" x="0" y="-10.16" drill="1.016" shape="octagon"/>
+<circle x="0" y="12.065" radius="0.381" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -17875,22 +17877,22 @@ A# =&gt; analogRead()</text>
 <wire x1="-3.302" y1="-0.762" x2="-2.794" y2="-0.762" width="0.1524" layer="94"/>
 <wire x1="-3.048" y1="-1.016" x2="-3.048" y2="-0.508" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="ADAFRUIT_GPS_BREAKOUT">
-<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<pin name="3.3V" x="-10.16" y="10.16" length="middle"/>
-<pin name="EN" x="-10.16" y="7.62" length="middle"/>
-<pin name="VBAT" x="-10.16" y="5.08" length="middle"/>
-<pin name="FIX" x="-10.16" y="2.54" length="middle"/>
-<pin name="TX" x="-10.16" y="0" length="middle"/>
-<pin name="RX" x="-10.16" y="-2.54" length="middle"/>
-<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
-<pin name="VIN" x="-10.16" y="-7.62" length="middle"/>
-<pin name="PPS" x="-10.16" y="-10.16" length="middle"/>
-<text x="-4.318" y="13.462" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="ADAFRUIT-GPS-BREAKOUT">
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="3.3V" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="EN" x="-12.7" y="-5.08" length="middle"/>
+<pin name="VBAT" x="-12.7" y="5.08" length="middle"/>
+<pin name="FIX" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="TX" x="-12.7" y="0" length="middle"/>
+<pin name="RX" x="-12.7" y="-2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-10.16" length="middle"/>
+<pin name="VIN" x="-12.7" y="10.16" length="middle"/>
+<pin name="PPS" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -20968,23 +20970,23 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADAFRUIT_GPS_BREAKOUT">
+<deviceset name="ADAFRUIT-GPS-BREAKOUT" prefix="GPS">
 <description>Adafruit Ultamate GPS v3</description>
 <gates>
-<gate name="G$1" symbol="ADAFRUIT_GPS_BREAKOUT" x="0" y="0"/>
+<gate name="G$1" symbol="ADAFRUIT-GPS-BREAKOUT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ADAFRUIT_GPS_BREAKOUT">
+<device name="" package="ADAFRUIT-GPS-BREAKOUT-V3">
 <connects>
-<connect gate="G$1" pin="3.3V" pad="P$1"/>
-<connect gate="G$1" pin="EN" pad="P$2"/>
-<connect gate="G$1" pin="FIX" pad="P$4"/>
-<connect gate="G$1" pin="GND" pad="P$7"/>
-<connect gate="G$1" pin="PPS" pad="P$9"/>
-<connect gate="G$1" pin="RX" pad="P$6"/>
-<connect gate="G$1" pin="TX" pad="P$5"/>
-<connect gate="G$1" pin="VBAT" pad="P$3"/>
-<connect gate="G$1" pin="VIN" pad="P$8"/>
+<connect gate="G$1" pin="3.3V" pad="1"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FIX" pad="4"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="PPS" pad="9"/>
+<connect gate="G$1" pin="RX" pad="6"/>
+<connect gate="G$1" pin="TX" pad="5"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
