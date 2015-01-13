@@ -71,7 +71,7 @@
 <library>
 <description>Magzor holes library -- also contains parts for stencils and standard mounting hole grid</description>
 <packages>
-<package name="1/8&quot;-HOLE,3/16&quot;-HEAD">
+<package name="1/8IN-HOLE,3/16IN-HEAD">
 <description>0.125"/+0.1",-0.0" hole with 3/16" head</description>
 <hole x="0" y="0" drill="3.429"/>
 <circle x="0" y="0" radius="1.190625" width="2.38125" layer="39"/>
@@ -81,7 +81,7 @@
 <circle x="0" y="0" radius="1.190625" width="2.38125" layer="43"/>
 <text x="-0.762" y="1.27" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="1/4&quot;-GRID-8&quot;X8&quot;">
+<package name="1/4IN-GRID-8X8IN">
 <wire x1="5.08" y1="-208.28" x2="7.62" y2="-210.82" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-208.28" x2="5.08" y2="-210.82" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-208.28" x2="13.97" y2="-210.82" width="0.127" layer="108"/>
@@ -2323,7 +2323,7 @@
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="1/4&quot;-GRID-6&quot;X4&quot;">
+<package name="1/4IN-GRID-6X4IN">
 <wire x1="5.08" y1="-106.68" x2="7.62" y2="-109.22" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-106.68" x2="5.08" y2="-109.22" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-106.68" x2="13.97" y2="-109.22" width="0.127" layer="108"/>
@@ -3237,7 +3237,7 @@
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="1/4&quot;-GRID-4&quot;X3&quot;">
+<package name="1/4IN-GRID-4X3IN">
 <wire x1="5.08" y1="-81.28" x2="7.62" y2="-83.82" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-81.28" x2="5.08" y2="-83.82" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-81.28" x2="13.97" y2="-83.82" width="0.127" layer="108"/>
@@ -3743,7 +3743,7 @@
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="1/4&quot;-GRID-3&quot;X2&quot;">
+<package name="1/4IN-GRID-3X2IN">
 <wire x1="5.08" y1="-55.88" x2="7.62" y2="-58.42" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-55.88" x2="5.08" y2="-58.42" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-55.88" x2="13.97" y2="-58.42" width="0.127" layer="108"/>
@@ -4041,7 +4041,7 @@
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="1/4&quot;-GRID-1.5&quot;X1&quot;">
+<package name="1/4IN-GRID-1.5X1IN">
 <wire x1="5.08" y1="-30.48" x2="7.62" y2="-33.02" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-30.48" x2="5.08" y2="-33.02" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-30.48" x2="13.97" y2="-33.02" width="0.127" layer="108"/>
@@ -4168,7 +4168,7 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="7/64&quot;-HOLE,1/4&quot;-HEAD">
+<package name="7/64IN-HOLE,1/4IN-HEAD">
 <description>Standard Magzor mounting hole, compatible with 4-40 screws</description>
 <hole x="0" y="0" drill="2.778125"/>
 <circle x="0" y="0" radius="1.5875" width="3.175" layer="39"/>
@@ -4218,7 +4218,7 @@
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
 </package>
-<package name="7/64&quot;-HOLE-ALIGNMENT">
+<package name="7/64IN-HOLE-ALIGNMENT">
 <description>This hole has less clearance than a standard mounting hole, so only use it for stencil alignment purposes</description>
 <hole x="0" y="0" drill="2.778125"/>
 <circle x="0" y="0" radius="0.762" width="1.524" layer="39"/>
@@ -4314,12 +4314,12 @@ holes</text>
 <gate name="G$1" symbol="HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1/8&quot;-HOLE,3/16&quot;-HEAD" package="1/8&quot;-HOLE,3/16&quot;-HEAD">
+<device name="-1/8IN-HOLE,3/16IN-HEAD" package="1/8IN-HOLE,3/16IN-HEAD">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-7/64&quot;-HOLE,1/4&quot;-HEAD" package="7/64&quot;-HOLE,1/4&quot;-HEAD">
+<device name="-7/64IN-HOLE,1/4IN-HEAD" package="7/64IN-HOLE,1/4IN-HEAD">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4331,27 +4331,27 @@ holes</text>
 <gate name="G$1" symbol="SMD-STENCIL-HOLES+GRID" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1.5&quot;X1&quot;" package="1/4&quot;-GRID-1.5&quot;X1&quot;">
+<device name="-1.5X1IN" package="1/4IN-GRID-1.5X1IN">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-3&quot;X2&quot;" package="1/4&quot;-GRID-3&quot;X2&quot;">
+<device name="-3X2IN" package="1/4IN-GRID-3X2IN">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-4&quot;X3&quot;" package="1/4&quot;-GRID-4&quot;X3&quot;">
+<device name="-4X3IN" package="1/4IN-GRID-4X3IN">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-6&quot;X4&quot;" package="1/4&quot;-GRID-6&quot;X4&quot;">
+<device name="-6X4IN" package="1/4IN-GRID-6X4IN">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-8&quot;X8&quot;" package="1/4&quot;-GRID-8&quot;X8&quot;">
+<device name="-8X8IN" package="1/4IN-GRID-8X8IN">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4363,7 +4363,7 @@ holes</text>
 <gate name="G$1" symbol="HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-7/64&quot;" package="7/64&quot;-HOLE-ALIGNMENT">
+<device name="-7/64IN" package="7/64IN-HOLE-ALIGNMENT">
 <technologies>
 <technology name=""/>
 </technologies>
