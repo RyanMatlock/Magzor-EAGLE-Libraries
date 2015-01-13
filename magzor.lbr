@@ -991,7 +991,7 @@ end</text>
 <rectangle x1="2.27" y1="-3.09" x2="5.27" y2="-1.49" layer="29"/>
 <rectangle x1="-6.31" y1="-3.1" x2="-0.51" y2="3.1" layer="29"/>
 </package>
-<package name="TAB-0.4-SQ">
+<package name="TAB-0.4IN-SQ">
 <description>solder tab
 0.4" x 0.4"
 for nickel battery tabs</description>
@@ -999,7 +999,7 @@ for nickel battery tabs</description>
 <text x="-5.588" y="-5.08" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <text x="-5.08" y="5.588" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
-<package name="TAB-0.187X0.375">
+<package name="TAB-0.187X0.375IN">
 <description>solder tab
 0.187" x 0.375"
 for thick wire</description>
@@ -1007,7 +1007,7 @@ for thick wire</description>
 <text x="-2.8575" y="-4.7625" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <text x="4.1275" y="-4.7625" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 </package>
-<package name="TAB-0.15X0.3">
+<package name="TAB-0.15X0.3IN">
 <description>solder tab
 0.15" x 0.3"
 for medium wire</description>
@@ -5607,7 +5607,7 @@ for medium wire</description>
 <rectangle x1="2.83718125" y1="6.298690625" x2="2.84988125" y2="6.310121875" layer="21"/>
 <rectangle x1="2.58571875" y1="6.298690625" x2="2.59841875" y2="6.310121875" layer="21"/>
 </package>
-<package name="MAGZOR-LOGO-0.25&quot;X0.25&quot;">
+<package name="MAGZOR-LOGO-0.25X0.25IN">
 <description>molecule logo, 0.25" x 0.25" (low res -- i.e. 200 dpi -- for OSH Park silkscreen printer)</description>
 <rectangle x1="2.159" y1="0.127" x2="2.794" y2="0.254" layer="21"/>
 <rectangle x1="2.032" y1="0.254" x2="3.048" y2="0.381" layer="21"/>
@@ -9824,7 +9824,7 @@ P/N: B2P-VH-FB-B</description>
 <vertex x="3.4" y="-9.7"/>
 </polygon>
 </package>
-<package name="LEG-BLOCK-1.75&quot;X2.625&quot;">
+<package name="LEG-BLOCK-1.75X2.625IN">
 <wire x1="0" y1="0" x2="44.45" y2="0" width="0.3048" layer="103"/>
 <wire x1="44.45" y1="0" x2="44.45" y2="66.675" width="0.3048" layer="103"/>
 <wire x1="44.45" y1="66.675" x2="0" y2="66.675" width="0.3048" layer="103"/>
@@ -10240,7 +10240,7 @@ P/N: B2P-VH-FB-B</description>
 <text x="0.508" y="-3.175" size="0.635" layer="21" font="vector" rot="R45">&gt;3</text>
 <text x="3.048" y="-3.175" size="0.635" layer="21" font="vector" rot="R45">&gt;4</text>
 </package>
-<package name="MAGZOR-LOGO-0.15&quot;X0.15&quot;">
+<package name="MAGZOR-LOGO-0.15X0.15IN">
 <description>molecule logo, 0.15" x 0.15" (low res -- i.e. 200 dpi -- for OSH Park silkscreen printer)</description>
 <rectangle x1="1.397" y1="0" x2="1.651" y2="0.127" layer="21"/>
 <rectangle x1="1.27" y1="0.127" x2="1.778" y2="0.254" layer="21"/>
@@ -18131,7 +18131,7 @@ A# =&gt; analogRead()</text>
 <gate name="G$1" symbol="HEADER-1X01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0.4&quot;X0.4&quot;" package="TAB-0.4-SQ">
+<device name="-0.4X0.4IN" package="TAB-0.4IN-SQ">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -18139,7 +18139,7 @@ A# =&gt; analogRead()</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0.187&quot;X0.375&quot;" package="TAB-0.187X0.375">
+<device name="-0.187X0.375IN" package="TAB-0.187X0.375IN">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -18147,7 +18147,7 @@ A# =&gt; analogRead()</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0.15&quot;X0.3&quot;" package="TAB-0.15X0.3">
+<device name="-0.15X0.3IN" package="TAB-0.15X0.3IN">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -18188,12 +18188,12 @@ A# =&gt; analogRead()</text>
 <gate name="G$1" symbol="MAGZOR-MOLECULE-LOGO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0.25&quot;X0.25&quot;" package="MAGZOR-LOGO-0.25&quot;X0.25&quot;">
+<device name="-0.25X0.25IN" package="MAGZOR-LOGO-0.25X0.25IN">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0.15&quot;X0.15&quot;" package="MAGZOR-LOGO-0.15&quot;X0.15&quot;">
+<device name="-0.15X0.15IN" package="MAGZOR-LOGO-0.15X0.15IN">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -18500,7 +18500,7 @@ A# =&gt; analogRead()</text>
 <gate name="G$1" symbol="HEADER-2X05-ROW-PARITY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0.1&quot;" package="HEADER-2X05-ROW-PARITY">
+<device name="-0.1IN" package="HEADER-2X05-ROW-PARITY">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -18524,7 +18524,7 @@ A# =&gt; analogRead()</text>
 <gate name="G$1" symbol="HEADER-1X05" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0.1&quot;-PITCH" package="HEADER-1X05">
+<device name="-0.1IN-PITCH" package="HEADER-1X05">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -18543,7 +18543,7 @@ A# =&gt; analogRead()</text>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-4.88MM(0.192&quot;)-PITCH" package="Y-4.88MM">
+<device name="-4.88MM(0.192IN)-PITCH" package="Y-4.88MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -19600,7 +19600,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="*-AP'" package="TO92-ALT">
+<device name="*-AP-ALT" package="TO92-ALT">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -20043,7 +20043,7 @@ primed version has tripod kinked leads, although they come from the manufacturer
 <gate name="G$1" symbol="LEG-BLOCK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1.75&quot;X2.625&quot;" package="LEG-BLOCK-1.75&quot;X2.625&quot;">
+<device name="-1.75X2.625IN" package="LEG-BLOCK-1.75X2.625IN">
 <technologies>
 <technology name=""/>
 </technologies>
