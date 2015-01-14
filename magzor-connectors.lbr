@@ -4125,7 +4125,7 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <technology name=""/>
 </technologies>
 </device>
-<device name="0.1IN-1SQ" package="P0.1IN-2X13-1SQ">
+<device name="-0.1IN-1SQ" package="P0.1IN-2X13-1SQ">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
