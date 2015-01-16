@@ -2945,8 +2945,7 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <pad name="A.1" x="-2.54" y="3.81" drill="0.9652" diameter="1.778" shape="square" rot="R90"/>
 <wire x1="-3.81" y1="3.175" x2="-3.81" y2="4.445" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-5.08" x2="-1.27" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-4.445" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-5.08" x2="-3.175" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.08" x2="-3.175" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-4.445" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="5.08" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="5.08" x2="-1.27" y2="4.445" width="0.127" layer="21"/>
@@ -2965,6 +2964,51 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <text x="-5.715" y="0.635" size="0.635" layer="21" font="vector" rot="R45">&gt;B</text>
 <text x="-5.715" y="-1.905" size="0.635" layer="21" font="vector" rot="R45">&gt;C</text>
 <text x="-5.715" y="-4.445" size="0.635" layer="21" font="vector" rot="R45">&gt;D</text>
+<wire x1="-1.27" y1="-4.445" x2="-1.905" y2="-5.08" width="0.127" layer="21"/>
+</package>
+<package name="P0.1IN-4X03">
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.127" layer="21"/>
+<wire x1="0.635" y1="5.08" x2="1.27" y2="4.445" width="0.127" layer="21"/>
+<pad name="A.2" x="0" y="3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="A.3" x="2.54" y="3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<wire x1="1.27" y1="4.445" x2="1.905" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.905" y1="5.08" x2="3.175" y2="5.08" width="0.127" layer="21"/>
+<wire x1="3.175" y1="5.08" x2="3.81" y2="4.445" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-4.445" x2="3.175" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-5.08" x2="1.905" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.08" x2="1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-4.445" x2="0.635" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-5.08" x2="-0.635" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="3.81" y1="4.445" x2="3.81" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="5.08" x2="-1.905" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="4.445" x2="-0.635" y2="5.08" width="0.127" layer="21"/>
+<pad name="A.1" x="-2.54" y="3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<wire x1="-0.635" y1="-5.08" x2="-1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.08" x2="-3.175" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-4.445" x2="-3.81" y2="4.445" width="0.127" layer="21"/>
+<circle x="-4.064" y="3.81" radius="0.179603125" width="0.127" layer="22"/>
+<pad name="B.2" x="0" y="1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="B.3" x="2.54" y="1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="B.1" x="-2.54" y="1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="C.2" x="0" y="-1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="C.3" x="2.54" y="-1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="C.1" x="-2.54" y="-1.27" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="D.2" x="0" y="-3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="D.3" x="2.54" y="-3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="D.1" x="-2.54" y="-3.81" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<wire x1="-3.175" y1="-5.08" x2="-3.81" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="4.445" x2="-3.175" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="5.08" x2="-1.27" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-4.445" x2="-1.905" y2="-5.08" width="0.127" layer="21"/>
+<text x="-3.81" y="7.62" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.81" y="5.715" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-0.635" y="-6.985" size="0.635" layer="21" font="vector" rot="R45">&gt;2</text>
+<text x="-3.175" y="-6.985" size="0.635" layer="21" font="vector" rot="R45">&gt;1</text>
+<text x="1.905" y="-6.985" size="0.635" layer="21" font="vector" rot="R45">&gt;3</text>
+<text x="5.08" y="2.54" size="0.635" layer="21" font="vector" rot="R45">&gt;A</text>
+<text x="5.08" y="0" size="0.635" layer="21" font="vector" rot="R45">&gt;B</text>
+<text x="5.08" y="-2.54" size="0.635" layer="21" font="vector" rot="R45">&gt;C</text>
+<text x="5.08" y="-5.08" size="0.635" layer="21" font="vector" rot="R45">&gt;D</text>
 </package>
 </packages>
 <symbols>
@@ -4214,6 +4258,25 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 </gates>
 <devices>
 <device name="-0.1IN-1SQ" package="P0.1IN-4X03-1SQ">
+<connects>
+<connect gate="A" pin="1" pad="A.1"/>
+<connect gate="A" pin="2" pad="A.2"/>
+<connect gate="A" pin="3" pad="A.3"/>
+<connect gate="B" pin="1" pad="B.1"/>
+<connect gate="B" pin="2" pad="B.2"/>
+<connect gate="B" pin="3" pad="B.3"/>
+<connect gate="C" pin="1" pad="C.1"/>
+<connect gate="C" pin="2" pad="C.2"/>
+<connect gate="C" pin="3" pad="C.3"/>
+<connect gate="D" pin="1" pad="D.1"/>
+<connect gate="D" pin="2" pad="D.2"/>
+<connect gate="D" pin="3" pad="D.3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.1IN" package="P0.1IN-4X03">
 <connects>
 <connect gate="A" pin="1" pad="A.1"/>
 <connect gate="A" pin="2" pad="A.2"/>
