@@ -21335,7 +21335,7 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ARDUINO-UNO-R3" prefix="SHIELD">
+<deviceset name="ARDUINO-UNO-R3" prefix="SH">
 <gates>
 <gate name="G$1" symbol="ARDUINO-UNO-R3-SHIELD" x="0" y="0"/>
 </gates>
