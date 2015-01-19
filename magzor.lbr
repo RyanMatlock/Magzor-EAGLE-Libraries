@@ -18094,8 +18094,8 @@ A# =&gt; analogRead()</text>
 <pin name="OUT" x="10.16" y="0" visible="pad" length="short" rot="R180"/>
 <pin name="IN+" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="IN-" x="-5.08" y="-2.54" visible="pad" length="short"/>
-<pin name="P$1" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="P$2" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="V-" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="V+" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
 <wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
 </symbol>
@@ -21374,6 +21374,26 @@ don't forget to set the &gt;LABEL attribute</description>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA330" prefix="U">
+<description>zero drift op amp</description>
+<gates>
+<gate name="G$1" symbol="OP-AMP-SINGLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
