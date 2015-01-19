@@ -21384,16 +21384,17 @@ don't forget to set the &gt;LABEL attribute</description>
 <deviceset name="OPA330" prefix="U">
 <description>zero drift op amp</description>
 <gates>
-<gate name="G$1" symbol="OP-AMP-SINGLE" x="0" y="0"/>
+<gate name="PWR" symbol="OP-AMP-PWR" x="0" y="12.7"/>
+<gate name="A" symbol="OP-AMP" x="0" y="-7.62"/>
 </gates>
 <devices>
 <device name="DBV" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="IN+" pad="3"/>
-<connect gate="G$1" pin="IN-" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$1" pin="V+" pad="5"/>
-<connect gate="G$1" pin="V-" pad="2"/>
+<connect gate="A" pin="IN+" pad="3"/>
+<connect gate="A" pin="IN-" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="PWR" pin="V+" pad="5"/>
+<connect gate="PWR" pin="V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
