@@ -21402,6 +21402,31 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TL072" prefix="U">
+<description>dual JFET input op amp (you could also use this for other SO-8/SOIC-8 dual op amps)</description>
+<gates>
+<gate name="PWR" symbol="OP-AMP-PWR" x="0" y="17.78"/>
+<gate name="A" symbol="OP-AMP" x="0" y="0"/>
+<gate name="B" symbol="OP-AMP" x="0" y="-15.24"/>
+</gates>
+<devices>
+<device name="D" package="SOIC8">
+<connects>
+<connect gate="A" pin="IN+" pad="3"/>
+<connect gate="A" pin="IN-" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="IN+" pad="5"/>
+<connect gate="B" pin="IN-" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="PWR" pin="V+" pad="8"/>
+<connect gate="PWR" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
