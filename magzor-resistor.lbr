@@ -74,16 +74,28 @@
 <layer number="108" name="MountingGrid" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="StencilDocu" color="20" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -110,6 +122,11 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -446,6 +463,35 @@ based on Vishay recommendation</description>
 <wire x1="3.3" y1="1.1" x2="3.3" y2="1.6" width="0.127" layer="21"/>
 <wire x1="3.3" y1="-1.1" x2="3.3" y2="-1.6" width="0.127" layer="21"/>
 </package>
+<package name="T1-3/4-5MM-LED-SIDE">
+<pad name="A" x="-1.27" y="-4.65" drill="0.8128" shape="octagon"/>
+<pad name="C" x="1.27" y="-4.65" drill="0.8128"/>
+<wire x1="-2.5" y1="3.85" x2="0" y2="6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="6.35" x2="2.5" y2="3.85" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2.8" y1="-1.35" x2="-2.5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.35" x2="2.5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3.85" x2="-2.5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="2.5" y1="3.85" x2="2.5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-1.35" x2="-2.8" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-2.35" x2="2.5" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.35" x2="2.5" y2="-1.35" width="0.127" layer="21"/>
+<text x="-2.9" y="-6.75" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<text x="-3.1" y="-2.35" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<polygon width="0.127" layer="51">
+<vertex x="-1.524" y="-2.413"/>
+<vertex x="-1.524" y="-4.6355" curve="90"/>
+<vertex x="-1.27" y="-4.8895" curve="90"/>
+<vertex x="-1.016" y="-4.6355"/>
+<vertex x="-1.016" y="-2.413"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.016" y="-2.413"/>
+<vertex x="1.016" y="-4.6355" curve="90"/>
+<vertex x="1.27" y="-4.8895" curve="90"/>
+<vertex x="1.524" y="-4.6355"/>
+<vertex x="1.524" y="-2.413"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="C-POL-US">
@@ -730,6 +776,15 @@ based on Vishay recommendation</description>
 </gates>
 <devices>
 <device name="-0805" package="SMD-D-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-T1-3/4-(5MM)-SIDE" package="T1-3/4-5MM-LED-SIDE">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
