@@ -4043,7 +4043,7 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <technology name=""/>
 </technologies>
 </device>
-<device name="0.1IN-TERM-BLOCK" package="TERM-BLOCK-1X02-282834-2">
+<device name="-0.1IN-TERM-BLOCK" package="TERM-BLOCK-1X02-282834-2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
