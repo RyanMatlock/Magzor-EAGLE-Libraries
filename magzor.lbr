@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12892,7 +12892,7 @@ GPS Breakout v3</text>
 <vertex x="1.524" y="-8.763"/>
 </polygon>
 </package>
-<package name="DC-POLARITY-POS-TIP">
+<package name="DC-POLARITY-POS-TIP-LG">
 <circle x="-3.81" y="0" radius="1.27" width="0.3048" layer="21"/>
 <circle x="3.81" y="0" radius="1.27" width="0.3048" layer="21"/>
 <wire x1="0.762" y1="1.016" x2="-1.27" y2="0" width="0.3048" layer="21" curve="126.869898"/>
@@ -12904,7 +12904,7 @@ GPS Breakout v3</text>
 <circle x="0" y="0" radius="0.635" width="0" layer="21"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.3048" layer="21"/>
 </package>
-<package name="DC-POLARITY-NEG-TIP">
+<package name="DC-POLARITY-NEG-TIP-LG">
 <circle x="-3.81" y="0" radius="1.27" width="0.3048" layer="21"/>
 <circle x="3.81" y="0" radius="1.27" width="0.3048" layer="21"/>
 <wire x1="0.762" y1="1.016" x2="-1.27" y2="0" width="0.3048" layer="21" curve="126.869898"/>
@@ -12915,6 +12915,28 @@ GPS Breakout v3</text>
 <wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.3048" layer="21"/>
 <circle x="0" y="0" radius="0.635" width="0" layer="21"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.3048" layer="21"/>
+</package>
+<package name="DC-POLARITY-POS-TIP-SM">
+<circle x="-1.905" y="0" radius="0.635" width="0.2032" layer="21"/>
+<circle x="1.905" y="0" radius="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.381" y1="0.508" x2="0.381" y2="-0.508" width="0.2032" layer="21" curve="253.739795"/>
+<wire x1="-2.2225" y1="0" x2="-1.5875" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="0.3175" x2="1.905" y2="-0.3175" width="0.2032" layer="21"/>
+<wire x1="1.5875" y1="0" x2="2.2225" y2="0" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="0.3175" width="0" layer="21"/>
+</package>
+<package name="DC-POLARITY-NEG-TIP-SM">
+<circle x="-1.905" y="0" radius="0.635" width="0.2032" layer="21"/>
+<circle x="1.905" y="0" radius="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.381" y1="0.508" x2="0.381" y2="-0.508" width="0.2032" layer="21" curve="253.739795"/>
+<wire x1="-2.2225" y1="0" x2="-1.5875" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.5875" y1="0" x2="2.2225" y2="0" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="0.3175" width="0" layer="21"/>
+<wire x1="-1.905" y1="0.3175" x2="-1.905" y2="-0.3175" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -22176,7 +22198,12 @@ don't forget to set the &gt;LABEL attribute</description>
 <gate name="G$1" symbol="DC-POLARITY-NEG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DC-POLARITY-NEG-TIP">
+<device name="-LG" package="DC-POLARITY-NEG-TIP-LG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SM" package="DC-POLARITY-NEG-TIP-SM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -22188,7 +22215,12 @@ don't forget to set the &gt;LABEL attribute</description>
 <gate name="G$1" symbol="DC-POLARITY-POS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DC-POLARITY-POS-TIP">
+<device name="-LG" package="DC-POLARITY-POS-TIP-LG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SM" package="DC-POLARITY-POS-TIP-SM">
 <technologies>
 <technology name=""/>
 </technologies>
