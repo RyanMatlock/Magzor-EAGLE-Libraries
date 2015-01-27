@@ -492,6 +492,22 @@ based on Vishay recommendation</description>
 <vertex x="1.524" y="-2.413"/>
 </polygon>
 </package>
+<package name="T93YB">
+<description>Vishay T93YB 3/8IN square multi-turn cermet trimmer</description>
+<pad name="CCW" x="-2.54" y="-1.27" drill="0.8128" shape="square" rot="R90"/>
+<pad name="W" x="0" y="1.27" drill="0.8128" shape="octagon" rot="R180"/>
+<pad name="CW" x="2.54" y="-1.27" drill="0.8128" shape="octagon" rot="R90"/>
+<wire x1="-4.8" y1="-2.5" x2="4.8" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="2.5" x2="4.8" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-2.5" x2="-4.8" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-2.5" x2="4.8" y2="2.5" width="0.127" layer="21"/>
+<circle x="-3.2" y="1.3" radius="0.6" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="1.1" x2="-3.7" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="1.5" x2="-2.7" y2="1.5" width="0.127" layer="21"/>
+<text x="-4.8" y="-4.25" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-4.8" y="-4.25" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-4.8" y="3" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-POL-US">
@@ -819,6 +835,16 @@ based on Vishay recommendation</description>
 </gates>
 <devices>
 <device name="-TC33" package="TC33">
+<connects>
+<connect gate="G$1" pin="CCW" pad="CCW"/>
+<connect gate="G$1" pin="CW" pad="CW"/>
+<connect gate="G$1" pin="W" pad="W"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-T93YB" package="T93YB">
 <connects>
 <connect gate="G$1" pin="CCW" pad="CCW"/>
 <connect gate="G$1" pin="CW" pad="CW"/>
