@@ -22258,6 +22258,24 @@ don't forget to set the &gt;LABEL attribute</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LFXX" prefix="U" uservalue="yes">
+<description>STMicroelectronics LF33AB and LF50AB LDO regulators</description>
+<gates>
+<gate name="G$1" symbol="3-TERM-FIXED-REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TR" package="TO252">
+<connects>
+<connect gate="G$1" pin="GND" pad="4(TAB)"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
