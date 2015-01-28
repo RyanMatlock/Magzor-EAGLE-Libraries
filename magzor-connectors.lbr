@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3658,8 +3658,37 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <text x="-5.8" y="-1.6" size="0.6096" layer="21" font="vector">&gt;6</text>
 </package>
 <package name="JST-XH-1X02">
-<pad name="P$1" x="1.25" y="0" drill="1.05" shape="octagon"/>
-<pad name="P$2" x="-1.25" y="0" drill="1.05" shape="octagon"/>
+<pad name="1" x="1.25" y="0" drill="1.05" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="1.05" shape="octagon"/>
+<wire x1="-3.8" y1="-2.35" x2="-1.5" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.35" x2="1.5" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.35" x2="3.8" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="3.4" x2="3.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="3.4" x2="-3.8" y2="-0.35" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-0.35" x2="-3.8" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-1.35" x2="-3.8" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="3.8" y1="3.4" x2="3.8" y2="-0.35" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-0.35" x2="3.8" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-1.35" x2="3.8" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.85" x2="-1.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.85" x2="3.3" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-1.85" x2="3.3" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-0.35" x2="3.3" y2="2.9" width="0.127" layer="21"/>
+<wire x1="3.3" y1="2.9" x2="-3.3" y2="2.9" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="2.9" x2="-3.3" y2="-0.35" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.35" x2="-3.3" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.85" x2="-1.5" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.85" x2="1.5" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.35" x2="-3.8" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-0.35" x2="-3.8" y2="-0.35" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-1.35" x2="3.8" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-0.35" x2="3.8" y2="-0.35" width="0.127" layer="21"/>
+<text x="0.5" y="3.8" size="0.6096" layer="21" font="vector">&gt;1</text>
+<text x="-2" y="3.8" size="0.6096" layer="21" font="vector">&gt;2</text>
+<circle x="2.7" y="0" radius="0.2" width="0.127" layer="22"/>
+<circle x="4.4" y="0" radius="0.2" width="0.127" layer="21"/>
+<text x="-3.8" y="-3.8" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<text x="-3.8" y="4.7" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -3679,8 +3708,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-5.08" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="5.588" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-9.906" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="-2.54" visible="pad" length="short"/>
@@ -3700,8 +3729,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="5.588" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="-2.54" visible="pad" length="short"/>
@@ -3723,8 +3752,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-9.906" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="5.08" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="0" visible="pad" length="short"/>
@@ -3751,8 +3780,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-12.446" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="5.08" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="2.54" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="0" visible="pad" length="short"/>
@@ -3775,8 +3804,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <wire x1="-2.54" y1="-2.54" x2="0.254" y2="-2.54" width="0.1524" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="-2.54" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="3.048" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="-2.54" visible="pad" length="short"/>
 </symbol>
@@ -3800,8 +3829,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="5.08" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="0" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="10.668" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-14.986" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="7.62" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="5.08" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="2.54" visible="pad" length="short"/>
@@ -3841,8 +3870,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="7.62" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="5.08" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="2.54" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="13.208" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-17.526" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="10.16" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="7.62" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="5.08" visible="pad" length="short"/>
@@ -3889,8 +3918,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="20.32" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="17.78" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="15.24" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="25.908" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-30.226" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="26.162" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="22.86" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="20.32" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="17.78" visible="pad" length="short"/>
@@ -3970,8 +3999,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="22.86" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="20.32" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="17.78" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="28.448" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-32.766" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="28.702" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="25.4" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="22.86" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="20.32" visible="pad" length="short"/>
@@ -4055,8 +4084,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="1.27" y="10.16" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="7.62" radius="0.898" width="0.254" layer="94"/>
 <circle x="1.27" y="5.08" radius="0.898" width="0.254" layer="94"/>
-<text x="-2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-17.526" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="12.7" visible="pad" length="short"/>
 <pin name="2" x="-5.08" y="10.16" visible="pad" length="short"/>
 <pin name="3" x="-5.08" y="7.62" visible="pad" length="short"/>
@@ -4135,8 +4164,8 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="-1.27" y="12.7" radius="0.898" width="0.254" layer="94"/>
 <circle x="-1.27" y="10.16" radius="0.898" width="0.254" layer="94"/>
 <circle x="-1.27" y="7.62" radius="0.898" width="0.254" layer="94"/>
-<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-20.066" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-7.62" y="15.24" visible="pad" length="short"/>
 <pin name="2" x="7.62" y="15.24" visible="pad" length="short" rot="R180"/>
 <pin name="3" x="-7.62" y="12.7" visible="pad" length="short"/>
@@ -4366,6 +4395,15 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 </technologies>
 </device>
 <device name="-JST-PH-SE" package="JST-PH-1X02-SE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-JST-XH" package="JST-XH-1X02">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
