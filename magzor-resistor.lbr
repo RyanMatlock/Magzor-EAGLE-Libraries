@@ -508,6 +508,25 @@ based on Vishay recommendation</description>
 <text x="-4.8" y="-4.25" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <text x="-4.8" y="3" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="SMD-0805-NO-CREAM">
+<description>use this for optional components (e.g. pullup resistors you don't think you'll need)</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<text x="-1.524" y="0.889" size="0.8128" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.524" y="-1.651" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="39"/>
+<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="39"/>
+<smd name="1" x="-0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.79375" y="0" dx="1.0795" dy="1.3208" layer="1" stop="no" cream="no"/>
+<rectangle x1="-1.3335" y1="-0.6604" x2="-0.254" y2="0.6604" layer="29"/>
+<rectangle x1="0.254" y1="-0.6604" x2="1.3335" y2="0.6604" layer="29"/>
+<rectangle x1="-0.1" y1="-0.8" x2="0.1" y2="-0.5" layer="35"/>
+<rectangle x1="-0.1" y1="0.5" x2="0.1" y2="0.8" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-POL-US">
@@ -751,6 +770,15 @@ based on Vishay recommendation</description>
 </technologies>
 </device>
 <device name="-1206" package="SMD-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805-NO-CREAM" package="SMD-0805-NO-CREAM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
