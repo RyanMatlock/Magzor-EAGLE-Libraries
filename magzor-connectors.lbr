@@ -4326,6 +4326,77 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <text x="-7.9" y="-3.45" size="0.6096" layer="51" rot="R90">XH</text>
 <text x="-0.55" y="8" size="0.6096" layer="51">PH</text>
 </package>
+<package name="JST-EH+XH+PH-1X02-SE">
+<pad name="EH+XH.1" x="-1.25" y="0" drill="1.05" shape="square" rot="R180"/>
+<pad name="EH+XH.2" x="1.25" y="0" drill="1.05" shape="octagon" rot="R180"/>
+<text x="-4.5" y="1.25" size="1.016" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="-3.75" y="-3.75" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<circle x="-4.25" y="0" radius="0.225" width="0.15" layer="21"/>
+<circle x="-2.75" y="0" radius="0.225" width="0.15" layer="22"/>
+<text x="-2" y="-1.75" size="0.635" layer="21" font="vector">&gt;1</text>
+<text x="0.5" y="-1.75" size="0.635" layer="21" font="vector">&gt;2</text>
+<wire x1="3.75" y1="6.75" x2="-3.75" y2="6.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="6.75" x2="-3.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="5.9" x2="-3.75" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="0.7" x2="-3.75" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.2" x2="-2.75" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-2.2" x2="3.75" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-2.2" x2="3.75" y2="0.7" width="0.127" layer="21"/>
+<wire x1="3.75" y1="0.7" x2="3.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="5.9" x2="3.75" y2="6.7" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="0.7" x2="-2.75" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="0.7" x2="-2.25" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="1.9" x2="-2.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="5.9" x2="-3.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="0.7" x2="2.75" y2="0.7" width="0.127" layer="21"/>
+<wire x1="2.75" y1="0.7" x2="2.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="2.75" y1="1.9" x2="2.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="2.75" y1="5.9" x2="3.75" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="1.9" x2="2.75" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.3" y1="0.7" x2="-2.25" y2="0.7" width="0.127" layer="51"/>
+<wire x1="2.75" y1="1.9" x2="2.75" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.75" y1="1.6" x2="-2.75" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="1.6" x2="-2.75" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.75" y1="0.7" x2="2.75" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="0.7" x2="-2.75" y2="-2.2" width="0.127" layer="21"/>
+<text x="-0.5" y="-2.5" size="0.6096" layer="22" font="vector" rot="MR0">&gt;1</text>
+<text x="2" y="-2.5" size="0.6096" layer="22" font="vector" rot="MR0">&gt;2</text>
+<wire x1="2.8" y1="0" x2="2" y2="0" width="0.127" layer="52"/>
+<wire x1="2" y1="0" x2="2" y2="1" width="0.127" layer="52"/>
+<wire x1="2" y1="1" x2="0.5" y2="1" width="0.127" layer="52"/>
+<wire x1="0.5" y1="1" x2="0.5" y2="0" width="0.127" layer="52"/>
+<wire x1="0.5" y1="0" x2="-0.5" y2="0" width="0.127" layer="52"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="1" width="0.127" layer="52"/>
+<wire x1="-0.5" y1="1" x2="-2" y2="1" width="0.127" layer="52"/>
+<wire x1="-2" y1="1" x2="-2" y2="0" width="0.127" layer="52"/>
+<wire x1="-2" y1="0" x2="-2.8" y2="0" width="0.127" layer="52"/>
+<pad name="PH.2" x="1" y="3" drill="0.85" shape="octagon" rot="R180"/>
+<pad name="PH.1" x="-1" y="3" drill="0.85" shape="square" rot="R180"/>
+<circle x="-2.25" y="3" radius="0.2" width="0.127" layer="21"/>
+<circle x="-3.5" y="3" radius="0.2" width="0.127" layer="22"/>
+<wire x1="2.2" y1="2.75" x2="-2.2" y2="2.75" width="0.127" layer="52"/>
+<wire x1="3.8" y1="-3.9" x2="2.8" y2="-3.9" width="0.127" layer="52"/>
+<wire x1="2.8" y1="-3.9" x2="2.8" y2="-0.05" width="0.127" layer="52"/>
+<wire x1="3.8" y1="-3.9" x2="3.8" y2="7.6" width="0.127" layer="52"/>
+<wire x1="3.8" y1="7.6" x2="2.95" y2="7.6" width="0.127" layer="52"/>
+<wire x1="2.95" y1="7.6" x2="2.95" y2="9" width="0.127" layer="52"/>
+<wire x1="2.95" y1="9" x2="-2.95" y2="9" width="0.127" layer="52"/>
+<wire x1="-2.95" y1="9" x2="-2.95" y2="7.6" width="0.127" layer="52"/>
+<wire x1="-2.95" y1="7.6" x2="-3.8" y2="7.6" width="0.127" layer="52"/>
+<wire x1="-3.8" y1="7.6" x2="-3.8" y2="-3.9" width="0.127" layer="52"/>
+<wire x1="-3.8" y1="-3.9" x2="-2.8" y2="-3.9" width="0.127" layer="52"/>
+<wire x1="-2.8" y1="-3.9" x2="-2.8" y2="0" width="0.127" layer="52"/>
+<wire x1="2.95" y1="1.4" x2="2.2" y2="1.4" width="0.127" layer="52"/>
+<wire x1="2.2" y1="1.4" x2="2.2" y2="2.7" width="0.127" layer="52"/>
+<wire x1="2.95" y1="7.6" x2="2.95" y2="1.45" width="0.127" layer="52"/>
+<wire x1="-2.2" y1="2.75" x2="-2.2" y2="1.4" width="0.127" layer="52"/>
+<wire x1="-2.2" y1="1.4" x2="-2.95" y2="1.4" width="0.127" layer="52"/>
+<wire x1="-2.95" y1="1.4" x2="-2.95" y2="7.6" width="0.127" layer="52"/>
+<wire x1="-2.95" y1="7.6" x2="2.95" y2="7.6" width="0.127" layer="52"/>
+<text x="3.6" y="-3.6" size="0.6096" layer="51" rot="R90">XH</text>
+<text x="-0.45" y="8" size="0.6096" layer="51">PH</text>
+<text x="-3" y="-2" size="0.6096" layer="51" rot="R90">EH</text>
+</package>
 </packages>
 <symbols>
 <symbol name="1X04">
@@ -5061,6 +5132,15 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <connects>
 <connect gate="G$1" pin="1" pad="PH.1 XH.1"/>
 <connect gate="G$1" pin="2" pad="PH.2 XH.2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-JST-EH+XH+PH-SE" package="JST-EH+XH+PH-1X02-SE">
+<connects>
+<connect gate="G$1" pin="1" pad="EH+XH.1 PH.1"/>
+<connect gate="G$1" pin="2" pad="EH+XH.2 PH.2"/>
 </connects>
 <technologies>
 <technology name=""/>
