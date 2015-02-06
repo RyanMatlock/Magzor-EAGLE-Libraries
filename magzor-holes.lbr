@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2130,30 +2130,6 @@
 <wire x1="198.12" y1="-11.43" x2="195.58" y2="-13.97" width="0.127" layer="108"/>
 <wire x1="201.93" y1="-11.43" x2="204.47" y2="-13.97" width="0.127" layer="108"/>
 <wire x1="204.47" y1="-11.43" x2="201.93" y2="-13.97" width="0.127" layer="108"/>
-<wire x1="6.35" y1="-212.09" x2="12.7" y2="-212.09" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="6.35" y="-212.09"/>
-<vertex x="6.858" y="-211.836"/>
-<vertex x="6.858" y="-212.344"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="12.7" y="-212.09"/>
-<vertex x="12.192" y="-211.836"/>
-<vertex x="12.192" y="-212.344"/>
-</polygon>
-<text x="8.255" y="-213.995" size="1.27" layer="108">1/4"</text>
-<wire x1="3.81" y1="-203.2" x2="3.81" y2="-209.55" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-203.2"/>
-<vertex x="4.064" y="-203.708"/>
-<vertex x="3.556" y="-203.708"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-209.55"/>
-<vertex x="4.064" y="-209.042"/>
-<vertex x="3.556" y="-209.042"/>
-</polygon>
-<text x="1.905" y="-205.105" size="1.27" layer="108" rot="R270">1/4"</text>
 <wire x1="5.08" y1="-5.08" x2="7.62" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="7.62" y1="-5.08" x2="5.08" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="11.43" y1="-5.08" x2="13.97" y2="-7.62" width="0.127" layer="108"/>
@@ -2284,36 +2260,18 @@
 <wire x1="210.82" y1="-11.43" x2="208.28" y2="-13.97" width="0.127" layer="108"/>
 <wire x1="208.28" y1="-5.08" x2="210.82" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="210.82" y1="-5.08" x2="208.28" y2="-7.62" width="0.127" layer="108"/>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
-<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
-<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
-<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
-<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
-<wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
-<text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
 <text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
+<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="31"/>
@@ -2322,6 +2280,15 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="50.8" y1="25.4" x2="76.2" y2="25.4" x3="63.5" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
+<dimension x1="6.35" y1="-209.55" x2="12.7" y2="-209.55" x3="9.525" y3="-215.9" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-209.55" x2="6.35" y2="-203.2" x3="0" y3="-206.375" textsize="1.27" layer="108" unit="inch" visible="yes"/>
 </package>
 <package name="1/4IN-GRID-6X4IN">
 <wire x1="5.08" y1="-106.68" x2="7.62" y2="-109.22" width="0.127" layer="108"/>
@@ -3174,60 +3141,18 @@
 <wire x1="153.67" y1="-5.08" x2="151.13" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="157.48" y1="-5.08" x2="160.02" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="160.02" y1="-5.08" x2="157.48" y2="-7.62" width="0.127" layer="108"/>
-<wire x1="6.35" y1="-110.49" x2="12.7" y2="-110.49" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="6.35" y="-110.49"/>
-<vertex x="6.858" y="-110.236"/>
-<vertex x="6.858" y="-110.744"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="12.7" y="-110.49"/>
-<vertex x="12.192" y="-110.236"/>
-<vertex x="12.192" y="-110.744"/>
-</polygon>
-<text x="8.255" y="-112.395" size="1.27" layer="108">1/4"</text>
-<wire x1="3.81" y1="-101.6" x2="3.81" y2="-107.95" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-101.6"/>
-<vertex x="4.064" y="-102.108"/>
-<vertex x="3.556" y="-102.108"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-107.95"/>
-<vertex x="4.064" y="-107.442"/>
-<vertex x="3.556" y="-107.442"/>
-</polygon>
-<text x="1.905" y="-103.505" size="1.27" layer="108" rot="R270">1/4"</text>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
-<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
-<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
-<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
-<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
-<wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
-<text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
 <text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
+<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="31"/>
@@ -3236,6 +3161,15 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="50.8" y1="25.4" x2="76.2" y2="25.4" x3="63.5" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-107.95" x2="12.7" y2="-107.95" x3="9.525" y3="-114.3" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-107.95" x2="6.35" y2="-101.6" x3="0" y3="-104.775" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4IN-GRID-4X3IN">
 <wire x1="5.08" y1="-81.28" x2="7.62" y2="-83.82" width="0.127" layer="108"/>
@@ -3680,60 +3614,18 @@
 <wire x1="109.22" y1="-11.43" x2="106.68" y2="-13.97" width="0.127" layer="108"/>
 <wire x1="106.68" y1="-5.08" x2="109.22" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="109.22" y1="-5.08" x2="106.68" y2="-7.62" width="0.127" layer="108"/>
-<wire x1="6.35" y1="-85.09" x2="12.7" y2="-85.09" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="6.35" y="-85.09"/>
-<vertex x="6.858" y="-84.836"/>
-<vertex x="6.858" y="-85.344"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="12.7" y="-85.09"/>
-<vertex x="12.192" y="-84.836"/>
-<vertex x="12.192" y="-85.344"/>
-</polygon>
-<text x="8.255" y="-86.995" size="1.27" layer="108">1/4"</text>
-<wire x1="3.81" y1="-76.2" x2="3.81" y2="-82.55" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-76.2"/>
-<vertex x="4.064" y="-76.708"/>
-<vertex x="3.556" y="-76.708"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-82.55"/>
-<vertex x="4.064" y="-82.042"/>
-<vertex x="3.556" y="-82.042"/>
-</polygon>
-<text x="1.905" y="-78.105" size="1.27" layer="108" rot="R270">1/4"</text>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
-<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
-<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
-<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
-<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
-<wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
-<text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
 <text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
+<circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="31"/>
@@ -3742,6 +3634,15 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="50.8" y1="25.4" x2="76.2" y2="25.4" x3="63.5" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-82.55" x2="12.7" y2="-82.55" x3="9.525" y3="-88.9" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-82.55" x2="6.35" y2="-76.2" x3="0" y3="-79.375" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4IN-GRID-3X2IN">
 <wire x1="5.08" y1="-55.88" x2="7.62" y2="-58.42" width="0.127" layer="108"/>
@@ -3978,60 +3879,18 @@
 <wire x1="77.47" y1="-5.08" x2="74.93" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="81.28" y1="-5.08" x2="83.82" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="83.82" y1="-5.08" x2="81.28" y2="-7.62" width="0.127" layer="108"/>
-<wire x1="6.35" y1="-59.69" x2="12.7" y2="-59.69" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="6.35" y="-59.69"/>
-<vertex x="6.858" y="-59.436"/>
-<vertex x="6.858" y="-59.944"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="12.7" y="-59.69"/>
-<vertex x="12.192" y="-59.436"/>
-<vertex x="12.192" y="-59.944"/>
-</polygon>
-<text x="8.255" y="-61.595" size="1.27" layer="108">1/4"</text>
-<wire x1="3.81" y1="-50.8" x2="3.81" y2="-57.15" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-50.8"/>
-<vertex x="4.064" y="-51.308"/>
-<vertex x="3.556" y="-51.308"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-57.15"/>
-<vertex x="4.064" y="-56.642"/>
-<vertex x="3.556" y="-56.642"/>
-</polygon>
-<text x="1.905" y="-52.705" size="1.27" layer="108" rot="R270">1/4"</text>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 <circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
 <wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
 <circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="38.1" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
-<wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
-<text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-38.1" width="0.127" layer="109"/>
-<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="31"/>
@@ -4040,6 +3899,15 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="50.8" y1="25.4" x2="76.2" y2="25.4" x3="63.5" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-57.15" x2="12.7" y2="-57.15" x3="9.525" y3="-63.5" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-57.15" x2="6.35" y2="-50.8" x3="0" y3="-53.975" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
 </package>
 <package name="1/4IN-GRID-1.5X1IN">
 <wire x1="5.08" y1="-30.48" x2="7.62" y2="-33.02" width="0.127" layer="108"/>
@@ -4112,61 +3980,31 @@
 <wire x1="39.37" y1="-5.08" x2="36.83" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="43.18" y1="-5.08" x2="45.72" y2="-7.62" width="0.127" layer="108"/>
 <wire x1="45.72" y1="-5.08" x2="43.18" y2="-7.62" width="0.127" layer="108"/>
-<wire x1="6.35" y1="-34.29" x2="12.7" y2="-34.29" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="6.35" y="-34.29"/>
-<vertex x="6.858" y="-34.036"/>
-<vertex x="6.858" y="-34.544"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="12.7" y="-34.29"/>
-<vertex x="12.192" y="-34.036"/>
-<vertex x="12.192" y="-34.544"/>
-</polygon>
-<text x="8.255" y="-36.195" size="1.27" layer="108">1/4"</text>
-<wire x1="3.81" y1="-25.4" x2="3.81" y2="-31.75" width="0.127" layer="108"/>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-25.4"/>
-<vertex x="4.064" y="-25.908"/>
-<vertex x="3.556" y="-25.908"/>
-</polygon>
-<polygon width="0.127" layer="108">
-<vertex x="3.81" y="-31.75"/>
-<vertex x="4.064" y="-31.242"/>
-<vertex x="3.556" y="-31.242"/>
-</polygon>
-<text x="1.905" y="-27.305" size="1.27" layer="108" rot="R270">1/4"</text>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-31.75" width="0.127" layer="109"/>
+<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
 <circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
 <wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
 <circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="31.75" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="1.27" x2="0" y2="-31.75" width="0.127" layer="109"/>
-<text x="-0.635" y="-26.67" size="1.27" layer="109" rot="R90">PCB edge not to exceed this line</text>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
+<circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-31.75" x2="12.7" y2="-31.75" x3="9.525" y3="-34.925" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<dimension x1="6.35" y1="-31.75" x2="6.35" y2="-25.4" x3="3.175" y3="-28.575" textsize="1.27" layer="108" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
 </package>
 <package name="7/64IN-HOLE,1/4IN-HEAD">
 <description>Standard Magzor mounting hole, compatible with 4-40 screws</description>
@@ -4179,35 +4017,15 @@
 <text x="-0.762" y="1.524" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="STENCIL-ALIGNMENT">
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.127" layer="109"/>
 <circle x="0" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="0" y1="25.4" x2="2.54" y2="22.86" width="0.127" layer="109"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.127" layer="109"/>
-<text x="2.54" y="19.05" size="1.27" layer="109">⌀0.25"</text>
-<wire x1="0" y1="29.21" x2="0" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="25.4" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="29.21" width="0.127" layer="109"/>
 <wire x1="-3.81" y1="25.4" x2="-5.08" y2="25.4" width="0.127" layer="109"/>
-<text x="-5.715" y="12.192" size="1.27" layer="109">1"</text>
-<text x="12.446" y="29.845" size="1.27" layer="109">1"</text>
 <wire x1="-5.08" y1="25.4" x2="-5.08" y2="15.24" width="0.127" layer="109"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.127" layer="109"/>
-<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.127" layer="109"/>
-<wire x1="15.24" y1="30.48" x2="25.4" y2="30.48" width="0.127" layer="109"/>
-<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.127" layer="109"/>
-<wire x1="40.64" y1="30.48" x2="50.8" y2="30.48" width="0.127" layer="109"/>
-<text x="0" y="31.75" size="1.27" layer="109">stencil alignment holes</text>
-<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge</text>
+<text x="0" y="34.29" size="1.27" layer="109">stencil alignment holes</text>
 <circle x="50.8" y="25.4" radius="3.175" width="0.127" layer="109"/>
 <circle x="25.4" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<text x="37.846" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="-5.08" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
+<wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="109"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.127" layer="109"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="29.21" width="0.127" layer="109"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.127" layer="109"/>
-<wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.127" layer="109"/>
-<text x="63.246" y="29.845" size="1.27" layer="109">1"</text>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.127" layer="109"/>
 <circle x="0" y="25.4" radius="3.175" width="0.127" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="0" y="25.4" radius="3.175" width="0.254" layer="32"/>
@@ -4217,6 +4035,13 @@
 <circle x="50.8" y="25.4" radius="3.175" width="0.254" layer="32"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="31"/>
 <circle x="76.2" y="25.4" radius="3.175" width="0.254" layer="32"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.127" layer="109"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-5.08" y3="12.7" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="3.175" y1="25.4" x2="-3.175" y2="25.4" x3="0" y3="27.94" textsize="1.27" layer="109" dtype="diameter" unit="inch" visible="yes"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="25.4" y1="25.4" x2="50.8" y2="25.4" x3="38.1" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<dimension x1="50.8" y1="25.4" x2="76.2" y2="25.4" x3="63.5" y3="30.48" textsize="1.27" layer="109" unit="inch" visible="yes"/>
+<text x="1.27" y="0.635" size="1.27" layer="109">PCB edge not to exceed this line</text>
 </package>
 <package name="7/64IN-HOLE-ALIGNMENT">
 <description>This hole has less clearance than a standard mounting hole, so only use it for stencil alignment purposes</description>
