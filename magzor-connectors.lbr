@@ -5961,8 +5961,7 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 </devices>
 </deviceset>
 <deviceset name="RJ45" prefix="J" uservalue="yes">
-<description>-SE: Molex 43249-8104 side entry RJ45 jack&lt;br&gt;
--TE: Molex 42878-1001 top entry RJ45 jack</description>
+<description>-SE: Molex 43249-8104; -TE: Molex 42878-1001</description>
 <gates>
 <gate name="G$1" symbol="RJ45" x="0" y="0"/>
 </gates>
