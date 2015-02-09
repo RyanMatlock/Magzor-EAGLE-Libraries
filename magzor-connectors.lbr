@@ -4636,6 +4636,36 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <circle x="-9.25" y="0" radius="0.225" width="0.15" layer="22"/>
 <circle x="-7.75" y="0" radius="0.225" width="0.15" layer="21"/>
 </package>
+<package name="P0.1IN-1X02-1SQ-RA">
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<pad name="2" x="1.27" y="0" drill="0.9652" diameter="1.778" shape="octagon" rot="R90"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<text x="-2.54" y="5.715" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="0.635" y="1.905" size="0.635" layer="21" font="vector" rot="R45">&gt;2</text>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
+<text x="-1.905" y="1.905" size="0.635" layer="21" font="vector" rot="R45">&gt;1</text>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.9652" diameter="1.778" shape="square" rot="R90"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.127" layer="21"/>
+<circle x="-2.794" y="0" radius="0.179603125" width="0.127" layer="22"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-10.795" width="0.8128" layer="51"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-10.795" width="0.8128" layer="51"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.127" layer="51"/>
+<rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="-1.27" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X04">
@@ -5380,6 +5410,15 @@ Note: if numbered attributes (i.e. name="1", name="2", etc.) are left blank on s
 <connects>
 <connect gate="G$1" pin="1" pad="EH+XH.1 PH.1"/>
 <connect gate="G$1" pin="2" pad="EH+XH.2 PH.2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0.1IN-1SQ-RA" package="P0.1IN-1X02-1SQ-RA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
